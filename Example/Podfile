@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Lores_Example' do
+  pod 'Lores', :path => '../'
+
+  target 'Lores_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
