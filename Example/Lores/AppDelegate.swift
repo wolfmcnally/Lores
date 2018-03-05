@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Lores
 //
-//  Created by ironwolf on 03/03/2018.
-//  Copyright (c) 2018 ironwolf. All rights reserved.
+//  Created by wolfmcnally on 03/03/2018.
+//  Copyright (c) 2018 wolfmcnally. All rights reserved.
 //
 
 import UIKit
@@ -43,4 +43,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

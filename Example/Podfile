@@ -1,11 +1,13 @@
 use_frameworks!
 
+pod 'Lores', :path => '../'
+pod 'WolfCore', :path => '../../WolfCore/'
+
+platform :ios, '11.0'
+
 target 'Lores_Example' do
-  pod 'Lores', :path => '../'
 
   target 'Lores_Tests' do
     inherit! :search_paths
-
-    
   end
 end
