@@ -1,5 +1,5 @@
 import Lores
-import WolfCore
+import typealias WolfCore.Frac
 
 class DripProgram: Program {
     private let percentObstacles: Frac = 0.3
@@ -11,11 +11,11 @@ class DripProgram: Program {
 
     private struct Drip {
         let backgroundCanvas: Canvas
-        var position: Lores.Point = .zero
+        var position: Point = .zero
         var direction = Offset(dx: 0, dy: 1)
         var frameCount = 0
 
-        init(backgroundCanvas: Canvas, position: Lores.Point) {
+        init(backgroundCanvas: Canvas, position: Point) {
             self.backgroundCanvas = backgroundCanvas
             self.position = position
         }
@@ -156,12 +156,12 @@ class DripProgram: Program {
         }
     }
 
-    private func randomStartPosition() -> Lores.Point? {
+    private func randomStartPosition() -> Point? {
         let bounds = canvas.bounds
 
-        var startPositions = [Lores.Point]()
+        var startPositions = [Point]()
         for x in bounds.minX ... bounds.maxX {
-            let p = Lores.Point(x: x, y: bounds.minY)
+            let p = Point(x: x, y: bounds.minY)
             if canvas[p] == .clear {
                 startPositions.append(p)
             }
@@ -173,9 +173,9 @@ class DripProgram: Program {
         return startPositions[0]
     }
 
-    private func centerStartPosition() -> Lores.Point? {
+    private func centerStartPosition() -> Point? {
         let bounds = canvas.bounds
-        let startPosition = Lores.Point(x: bounds.midX, y: bounds.minY)
+        let startPosition = Point(x: bounds.midX, y: bounds.minY)
         guard backgroundCanvas[startPosition] == .clear else { return nil }
         return startPosition
     }

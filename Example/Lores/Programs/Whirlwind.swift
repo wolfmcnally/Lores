@@ -1,5 +1,5 @@
 import Lores
-import WolfCore
+import func WolfCore.easeIn
 
 class WhirlwindProgram: Program {
     private struct Particle {

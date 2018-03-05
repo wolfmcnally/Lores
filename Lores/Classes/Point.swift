@@ -5,6 +5,8 @@
 //  Created by 🐺 McNally on 3/3/18.
 //
 
+import struct WolfCore.Point
+
 public struct Point {
     public var x: Int
     public var y: Int
@@ -18,8 +20,8 @@ public struct Point {
 }
 
 extension Point {
-    public var dpoint: DPoint {
-        return DPoint(x: Double(x), y: Double(y))
+    public var dpoint: WolfCore.Point {
+        return WolfCore.Point(x: Double(x), y: Double(y))
     }
 }
 

@@ -1,5 +1,4 @@
 import Lores
-import WolfCore
 
 class SparklerProgram: Program {
     let numSparks = 400
@@ -10,7 +9,7 @@ class SparklerProgram: Program {
 
     struct Spark {
         var position: DPoint
-        var direction: DVector
+        var direction: Vector
         var hue: Frac
         var saturation: Frac
         let bornFrame: Int
@@ -57,12 +56,12 @@ class SparklerProgram: Program {
         }
     }
 
-    override func touchBeganAtPoint(_ point: Lores.Point) {
+    override func touchBeganAtPoint(_ point: Point) {
         genPosition = canvas.clampPoint(point).dpoint
         genHue = Random.number()
     }
 
-    override func touchMovedAtPoint(_ point: Lores.Point) {
+    override func touchMovedAtPoint(_ point: Point) {
         genPosition = canvas.clampPoint(point).dpoint
     }
 
@@ -74,7 +73,7 @@ class SparklerProgram: Program {
         let position = genPosition
         let angle = Random.number(0.0 .. Double.pi * 2)
         let speed = Random.number(0.5 .. 2.0)
-        let direction = DVector(angle: angle, magnitude: speed)
+        let direction = Vector(angle: angle, magnitude: speed)
 
         let hue: Frac
         let saturation: Frac
