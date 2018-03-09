@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0312313C205115BB007A56C2 /* RainingHeartsProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312313B205115BB007A56C2 /* RainingHeartsProgram.swift */; };
 		037857DA204BF9D000A0A57D /* Whirlwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037857D9204BF9D000A0A57D /* Whirlwind.swift */; };
 		037857DC204C036A00A0A57D /* DripProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037857DB204C036A00A0A57D /* DripProgram.swift */; };
 		03EF0EC7204B918D003741FE /* BallProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF0EC6204B918D003741FE /* BallProgram.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0312313B205115BB007A56C2 /* RainingHeartsProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainingHeartsProgram.swift; sourceTree = "<group>"; };
 		037857D9204BF9D000A0A57D /* Whirlwind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whirlwind.swift; sourceTree = "<group>"; };
 		037857DB204C036A00A0A57D /* DripProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DripProgram.swift; sourceTree = "<group>"; };
 		03EF0EC6204B918D003741FE /* BallProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallProgram.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				03EF0EDC204BE468003741FE /* SparklerProgram.swift */,
 				037857D9204BF9D000A0A57D /* Whirlwind.swift */,
 				037857DB204C036A00A0A57D /* DripProgram.swift */,
+				0312313B205115BB007A56C2 /* RainingHeartsProgram.swift */,
 			);
 			path = Programs;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				03EF0ED9204BCBC4003741FE /* MandalaProgram.swift in Sources */,
 				03EF0ECF204BAA01003741FE /* PebblesProgram.swift in Sources */,
+				0312313C205115BB007A56C2 /* RainingHeartsProgram.swift in Sources */,
 				03EF0EDD204BE468003741FE /* SparklerProgram.swift in Sources */,
 				03EF0ED1204BAA01003741FE /* EmptyProgram.swift in Sources */,
 			);
