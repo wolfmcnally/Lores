@@ -63,32 +63,29 @@ class RainingHeartsProgram: Program {
         }
     }
 
-    class MySprite: Sprite {
+    class MySprite: SimpleSprite {
         var direction: Vector = .zero
         var dPosition: DPoint = .zero
         var z: Double = 0
 
-        override init(shape: Shape) {
-            super.init(shape: shape)
-            wraps = true
+        init(shape: Shape) {
+            super.init(shape: shape, mode: .wrap)
         }
     }
 
-    struct SmallHeart: Shape {
-        var colors = standardColors
-        var offset = Offset(dx: 2, dy: 1)
-        var rows = [
+    let smallHeart = Shape(
+        offset: Offset(dx: 2, dy: 1),
+        rows: [
             "❔❤️❔❤️❔",
             "❤️❤️❤️❤️❤️",
             "❔❤️❤️❤️❔",
             "❔❔❤️❔❔"
         ]
-    }
+    )
 
-    struct MediumHeart: Shape {
-        var colors = standardColors
-        var offset = Offset(dx: 4, dy: 3)
-        var rows = [
+    let mediumHeart = Shape(
+        offset: Offset(dx: 4, dy: 3),
+        rows: [
             "❔❤️❤️❔❔❔❤️❤️❔",
             "❤️❤️❤️❤️❔❤️❤️❤️❤️",
             "❤️❤️❤️❤️❤️❤️❤️❤️❤️",
@@ -97,12 +94,11 @@ class RainingHeartsProgram: Program {
             "❔❔❔❤️❤️❤️❔❔❔",
             "❔❔❔❔❤️❔❔❔❔"
         ]
-    }
+    )
 
-    struct LargeHeart: Shape {
-        var colors = standardColors
-        var offset = Offset(dx: 6, dy: 4)
-        var rows = [
+    let largeHeart = Shape(
+        offset: Offset(dx: 6, dy: 4),
+        rows: [
             "❔❔❤️❤️❤️❔❔❔❤️❤️❤️❔❔",
             "❔❤️❤️❤️❤️❤️❔❤️❤️❤️❤️❤️❔",
             "❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️",
@@ -115,12 +111,11 @@ class RainingHeartsProgram: Program {
             "❔❔❔❔❔❤️❤️❤️❔❔❔❔❔",
             "❔❔❔❔❔❔❤️❔❔❔❔❔❔"
         ]
-    }
+    )
 
-    struct XLargeHeart: Shape {
-        var colors = standardColors
-        var offset = Offset(dx: 8, dy: 6)
-        var rows = [
+    let xLargeHeart = Shape(
+        offset: Offset(dx: 8, dy: 6),
+        rows: [
             "❔❔❔❤️❤️❤️❤️❔❔❔❤️❤️❤️❤️❔❔❔",
             "❔❔❤️❤️❤️❤️❤️❤️❔❤️❤️❤️❤️❤️❤️❔❔",
             "❔❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❔",
@@ -137,13 +132,13 @@ class RainingHeartsProgram: Program {
             "❔❔❔❔❔❔❔❤️❤️❤️❔❔❔❔❔❔❔",
             "❔❔❔❔❔❔❔❔❤️❔❔❔❔❔❔❔❔"
         ]
-    }
+    )
 
     private lazy var allShapes: [Shape] = [
-        SmallHeart(),
-        MediumHeart(),
-        LargeHeart(),
-        XLargeHeart()
+        smallHeart,
+        mediumHeart,
+        largeHeart,
+        xLargeHeart
     ]
 }
 

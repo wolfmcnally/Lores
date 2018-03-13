@@ -5,21 +5,31 @@
 //  Created by 🐺 McNally on 3/8/18.
 //
 
-public typealias ColorTable = [Character: Color?]
+public struct ColorTable {
+    public var colors: [Character: Color?] = [:]
 
-public let standardColors: ColorTable = [
-    "❔": nil,
-    "⚪️": .clear,
-    "💣": .black,
-    "💭": .white,
-    "🐺": .gray,
-    "❤️": .red,
-    "🍊": .orange,
-    "🍋": .yellow,
-    "🍏": .green,
-    "🦋": .blue,
-    "🍇": .purple,
-    "🌸": .pink,
-    "🐻": .brown
-]
+    public init(_ colors: [Character: Color?]) {
+        self.colors = colors
+    }
 
+    public subscript(c: Character) -> Color? {
+        get { return colors[c]! }
+        set { colors[c] = newValue }
+    }
+
+    public static let standardColors = ColorTable([
+        "❔": nil,
+        "⚪️": .clear,
+        "💣": .black,
+        "💭": .white,
+        "🐺": .gray,
+        "❤️": .red,
+        "🍊": .orange,
+        "🍋": .yellow,
+        "🍏": .green,
+        "🦋": .blue,
+        "🍇": .purple,
+        "🌸": .pink,
+        "🐻": .brown
+    ])
+}

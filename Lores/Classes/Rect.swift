@@ -5,6 +5,8 @@
 //  Created by Wolf McNally on 3/3/18.
 //
 
+import Foundation
+
 public struct Rect {
     public var origin: Point
     public var size: Size
@@ -24,6 +26,9 @@ public struct Rect {
 
     public var midX: Int { return origin.x + size.width / 2 }
     public var midY: Int { return origin.y + size.height / 2 }
+
+    public var rangeX: CountableClosedRange<Int> { return minX ... maxX }
+    public var rangeY: CountableClosedRange<Int> { return minY ... maxY }
 
     public func randomX() -> Int { return origin.x + size.randomX() }
     public func randomY() -> Int { return origin.y + size.randomY() }

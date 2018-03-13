@@ -7,42 +7,40 @@
 
 import WolfCore
 
+class CanvasImageView: ImageView {
+    override func setup() {
+        super.setup()
+        layer.magnificationFilter = kCAFilterNearest
+        contentMode = .scaleAspectFit
+    }
+}
+
 class CanvasView : View {
     var touchBegan: ((_ point: CGPoint) -> Void)?
     var touchMoved: ((_ point: CGPoint) -> Void)?
     var touchEnded: ((_ point: CGPoint) -> Void)?
     var touchCancelled: ((_ point: CGPoint) -> Void)?
 
-    var backgroundImage: UIImage? {
-        get { return backgroundImageView.image }
-        set { backgroundImageView.image = newValue }
+    var layerViews = [ImageView]()
+    var screenSpec: ScreenSpec! {
+        didSet {
+            syncToScreen()
+        }
     }
 
-    var image: UIImage? {
-        get { return imageView.image }
-        set { imageView.image = newValue }
-    }
-
-    private lazy var backgroundImageView = ImageView() • { 🍒 in
-        🍒.layer.magnificationFilter = kCAFilterNearest
-        🍒.contentMode = .scaleAspectFit
-    }
-
-    private lazy var imageView = ImageView() • { 🍒 in
-        🍒.layer.magnificationFilter = kCAFilterNearest
-        🍒.contentMode = .scaleAspectFit
+    private func syncToScreen() {
+        removeAllSubviews()
+        layerViews.removeAll()
+        screenSpec.layerSpecs.forEach { spec in
+            let view = CanvasImageView()
+            addSubview(view)
+            view.constrainFrameToFrame()
+            layerViews.append(view)
+        }
     }
 
     override func setup() {
         super.setup()
-
-        self => [
-            backgroundImageView,
-            imageView
-        ]
-
-        backgroundImageView.constrainFrameToFrame()
-        imageView.constrainFrameToFrame()
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

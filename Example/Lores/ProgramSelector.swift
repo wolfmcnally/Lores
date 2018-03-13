@@ -18,4 +18,7 @@
 //let program = SparklerProgram()
 //let program = WhirlwindProgram()
 //let program = DripProgram()
-let program = RainingHeartsProgram()
+//let program = RainingHeartsProgram()
+//let program = SargonChessboardProgram()
+let program = SwiftLesson1()
+

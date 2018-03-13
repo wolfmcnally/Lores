@@ -7,39 +7,71 @@
 
 import WolfCore
 
+public struct ScreenSpec {
+    public var mainLayer: Int
+    public var layerSpecs: [LayerSpec]
+
+    public init(mainLayer: Int = 1, layerSpecs: [LayerSpec]) {
+        self.mainLayer = mainLayer
+        self.layerSpecs = layerSpecs
+    }
+}
+
+public struct LayerSpec {
+    public var clearColor: Color?
+
+    public init(clearColor: Color? = nil) {
+        self.clearColor = clearColor
+    }
+}
+
 open class Program {
+    private typealias `Self` = Program
+
     private var _canvasSize = Size(width: 40, height: 40)
-    private var _canvas: Canvas?
-    private var _backgroundCanvas: Canvas?
     private var _framesPerSecond: Float = 0.0
     private var canceler: Cancelable?
     private var needsDisplay: Bool = true
     public var didDisplay: Block?
     public private(set) var frameNumber = 0
+    public var onScreenChanged: ((ScreenSpec) -> Void)?
 
-    public private(set) var canvas: Canvas! {
-        get {
-            if _canvas == nil {
-                _canvas = Canvas(size: canvasSize, clearColor: .clear)
-            }
-            return _canvas
-        }
-        set { _canvas = newValue }
+    public var screenSpec = ScreenSpec(
+        mainLayer: 1,
+        layerSpecs: [
+            LayerSpec(clearColor: Color(color: .white, alpha: 0.05)),
+            LayerSpec(clearColor: .clear)
+        ]) {
+        didSet { resetScreen() }
     }
 
-    public private(set) var backgroundCanvas: Canvas! {
-        get {
-            if _backgroundCanvas == nil {
-                _backgroundCanvas = Canvas(size: canvasSize, clearColor: Color(color: .white, alpha: 0.05))
-            }
-            return _backgroundCanvas
-        }
-        set { _backgroundCanvas = newValue }
+    public private(set) var layers = [Canvas]()
+
+    public var canvas: Canvas {
+        return layers[screenSpec.mainLayer]
     }
 
-    private func invalidateCanvas() {
-        canvas = nil
-        backgroundCanvas = nil
+    public var canvasClearColor: Color? {
+        get { return canvas.clearColor }
+        set { canvas.clearColor = newValue }
+    }
+
+    public var backgroundCanvas: Canvas {
+        return layers[screenSpec.mainLayer - 1]
+    }
+
+    public var backgroundCanvasClearColor: Color? {
+        get { return backgroundCanvas.clearColor }
+        set { backgroundCanvas.clearColor = newValue }
+    }
+
+    private func resetScreen() {
+        layers.removeAll()
+        for layerSpec in screenSpec.layerSpecs {
+            let layer = Canvas(size: canvasSize, clearColor: layerSpec.clearColor)
+            layers.append(layer)
+        }
+        onScreenChanged?(self.screenSpec)
     }
 
     public var canvasSize: Size {
@@ -48,31 +80,21 @@ open class Program {
         }
         set {
             _canvasSize = newValue
-            invalidateCanvas()
+            resetScreen()
         }
     }
 
-    private var queue = DispatchQueue(label: "Program Queue", qos: DispatchQoS.init(qosClass: .userInteractive, relativePriority: 0), attributes: [])
-    private var dispatchSource: DispatchSourceTimer!
+    private var displayLink: DisplayLink?
 
-    public var framesPerSecond: Float {
-        get {
-            return _framesPerSecond
-        }
-        set {
-            if _framesPerSecond != newValue {
-                _framesPerSecond = newValue
-                let interval = TimeInterval(Float(1.0) / _framesPerSecond)
-                dispatchSource?.cancel()
-                dispatchSource = DispatchSource.makeTimerSource(flags: [.strict], queue: queue)
-                dispatchSource.schedule(deadline: .now(), repeating: interval, leeway: DispatchTimeInterval.milliseconds(0))
-                dispatchSource.setEventHandler { [unowned self] in
+    public var framesPerSecond: Int = 0 {
+        didSet {
+            displayLink?.invalidate()
+            guard framesPerSecond > 0 else { return }
+            displayLink = DisplayLink(preferredFramesPerSecond: framesPerSecond) { [unowned self] _ in
+                dispatchOnMain {
                     self._update()
-                    dispatchOnMain {
-                        self.displayIfNeeded()
-                    }
+                    self.displayIfNeeded()
                 }
-                dispatchSource.resume()
             }
         }
     }
@@ -82,6 +104,7 @@ open class Program {
     }
 
     private func _setup() {
+        resetScreen()
         setup()
     }
 
@@ -121,8 +144,9 @@ open class Program {
     }
 
     open func clear() {
-        backgroundCanvas.clear()
-        canvas.clear()
+        for layer in layers {
+            layer.clear()
+        }
     }
 
     open func setup() { }

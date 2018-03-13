@@ -28,6 +28,9 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		79244810205489C700E4FF7D /* SargonChessboardProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924480F205489C700E4FF7D /* SargonChessboardProgram.swift */; };
+		792F7B702055142C0058C5BC /* SwiftLesson1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F7B6F2055142C0058C5BC /* SwiftLesson1.swift */; };
+		792F7B722055B4830058C5BC /* SwiftLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F7B712055B4830058C5BC /* SwiftLesson.swift */; };
 		91AAD5695207A85BCDE24950 /* Pods_Lores_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C418086A4D772CAAA54F354A /* Pods_Lores_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +75,9 @@
 		6DBFDAEEB7C476D5A9CF5A3B /* Pods-Lores_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example/Pods-Lores_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		74FD27F7513D557CD2EB01E8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		77BFF7B26D62F5A7628CA030 /* Pods-Lores_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Tests/Pods-Lores_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7924480F205489C700E4FF7D /* SargonChessboardProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SargonChessboardProgram.swift; sourceTree = "<group>"; };
+		792F7B6F2055142C0058C5BC /* SwiftLesson1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLesson1.swift; sourceTree = "<group>"; };
+		792F7B712055B4830058C5BC /* SwiftLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLesson.swift; sourceTree = "<group>"; };
 		C418086A4D772CAAA54F354A /* Pods_Lores_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lores_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7ADB31FE1336D4A9AAEA618 /* Pods-Lores_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example/Pods-Lores_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F2F9B859BA633301E8299B8E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -113,6 +119,9 @@
 				037857D9204BF9D000A0A57D /* Whirlwind.swift */,
 				037857DB204C036A00A0A57D /* DripProgram.swift */,
 				0312313B205115BB007A56C2 /* RainingHeartsProgram.swift */,
+				7924480F205489C700E4FF7D /* SargonChessboardProgram.swift */,
+				792F7B712055B4830058C5BC /* SwiftLesson.swift */,
+				792F7B6F2055142C0058C5BC /* SwiftLesson1.swift */,
 			);
 			path = Programs;
 			sourceTree = "<group>";
@@ -427,9 +436,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				03EF0ED7204BC9CD003741FE /* RectanglesProgram.swift in Sources */,
+				792F7B702055142C0058C5BC /* SwiftLesson1.swift in Sources */,
 				03EF0ED0204BAA01003741FE /* HelloPixelProgram.swift in Sources */,
+				792F7B722055B4830058C5BC /* SwiftLesson.swift in Sources */,
 				037857DC204C036A00A0A57D /* DripProgram.swift in Sources */,
 				037857DA204BF9D000A0A57D /* Whirlwind.swift in Sources */,
+				79244810205489C700E4FF7D /* SargonChessboardProgram.swift in Sources */,
 				607FACD81AFB9204008FA782 /* AppViewController.swift in Sources */,
 				03EF0ED3204BAA01003741FE /* GravelProgram.swift in Sources */,
 				03EF0EC9204B97FC003741FE /* ProgramSelector.swift in Sources */,

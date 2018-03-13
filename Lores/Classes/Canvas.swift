@@ -135,7 +135,7 @@ public class Canvas {
         return planarFloatsPerRow * point.y + point.x
     }
 
-    public func setPoint(_ point: Point, toColor color: Color) {
+    public func setPoint(_ point: Point, to color: Color) {
         checkPoint(point)
 
         invalidateImage()
@@ -147,7 +147,7 @@ public class Canvas {
         blueFData[offset] = Float(color.blue)
     }
 
-    public func color(at point: Point) -> Color {
+    public func colorAtPoint(_ point: Point) -> Color {
         checkPoint(point)
 
         let offset = offsetForPoint(point)
@@ -155,27 +155,17 @@ public class Canvas {
     }
 
     public subscript(point: Point) -> Color {
-        get {
-            return color(at: point)
-        }
-        set {
-            setPoint(point, toColor: newValue)
-        }
+        get { return colorAtPoint(point) }
+        set { setPoint(point, to: newValue) }
     }
 
     public subscript(x: Int, y: Int) -> Color {
-        get {
-            return color(at: Point(x: x, y: y))
-        }
-        set {
-            setPoint(Point(x: x, y: y), toColor: newValue)
-        }
+        get { return colorAtPoint(Point(x: x, y: y)) }
+        set { setPoint(Point(x: x, y: y), to: newValue) }
     }
 
     public subscript(xRange: CountableClosedRange<Int>, y: Int) -> Color {
-        get {
-            return color(at: Point(x: xRange.lowerBound, y: y))
-        }
+        get { return colorAtPoint(Point(x: xRange.lowerBound, y: y)) }
         set {
             for x in xRange {
                 self[x, y] = newValue
@@ -184,9 +174,7 @@ public class Canvas {
     }
 
     public subscript(x: Int, yRange: CountableClosedRange<Int>) -> Color {
-        get {
-            return color(at: Point(x: x, y: yRange.lowerBound))
-        }
+        get { return colorAtPoint(Point(x: x, y: yRange.lowerBound)) }
         set {
             for y in yRange {
                 self[x, y] = newValue
@@ -195,9 +183,7 @@ public class Canvas {
     }
 
     public subscript(xRange: CountableRange<Int>, y: Int) -> Color {
-        get {
-            return color(at: Point(x: xRange.lowerBound, y: y))
-        }
+        get { return colorAtPoint(Point(x: xRange.lowerBound, y: y)) }
         set {
             for x in xRange {
                 self[x, y] = newValue
@@ -206,9 +192,7 @@ public class Canvas {
     }
 
     public subscript(x: Int, yRange: CountableRange<Int>) -> Color {
-        get {
-            return color(at: Point(x: x, y: yRange.lowerBound))
-        }
+        get { return colorAtPoint(Point(x: x, y: yRange.lowerBound)) }
         set {
             for y in yRange {
                 self[x, y] = newValue

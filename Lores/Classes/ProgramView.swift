@@ -8,8 +8,17 @@
 import WolfCore
 
 public class ProgramView: View {
-    public var program: Program!
-    private var canvasView: CanvasView!
+    public var program: Program! {
+        didSet {
+            syncToProgram()
+        }
+    }
+    private var canvasView: CanvasView! {
+        didSet {
+            syncToProgram()
+        }
+    }
+
     private var backgroundView: BackgroundView!
 
     public var backgroundImage: UIImage? {
@@ -29,6 +38,14 @@ public class ProgramView: View {
 
         addBackgroundView()
         addCanvasView()
+    }
+
+    private func syncToProgram() {
+        guard let program = program else { return }
+        program.onScreenChanged = { [unowned self] screenSpec in
+            self.canvasView?.screenSpec = screenSpec
+        }
+        canvasView?.screenSpec = program.screenSpec
     }
 
     func addBackgroundView() {
@@ -60,8 +77,9 @@ public class ProgramView: View {
     }
 
     public func flush() {
-        canvasView.backgroundImage = program.backgroundCanvas.image
-        canvasView.image = program.canvas.image
+        for (view, canvas) in zip(canvasView.layerViews, program.layers) {
+            view.image = canvas.image
+        }
     }
 
     func canvasPointForCanvasViewPoint(_ point: CGPoint) -> Point {
