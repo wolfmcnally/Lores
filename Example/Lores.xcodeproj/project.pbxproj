@@ -10,6 +10,7 @@
 		0312313C205115BB007A56C2 /* RainingHeartsProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312313B205115BB007A56C2 /* RainingHeartsProgram.swift */; };
 		037857DA204BF9D000A0A57D /* Whirlwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037857D9204BF9D000A0A57D /* Whirlwind.swift */; };
 		037857DC204C036A00A0A57D /* DripProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037857DB204C036A00A0A57D /* DripProgram.swift */; };
+		039123672057824300BD33AD /* MushroomProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039123662057824300BD33AD /* MushroomProgram.swift */; };
 		03EF0EC7204B918D003741FE /* BallProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF0EC6204B918D003741FE /* BallProgram.swift */; };
 		03EF0EC9204B97FC003741FE /* ProgramSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF0EC8204B97FC003741FE /* ProgramSelector.swift */; };
 		03EF0ECF204BAA01003741FE /* PebblesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF0ECA204BAA00003741FE /* PebblesProgram.swift */; };
@@ -48,6 +49,7 @@
 		0312313B205115BB007A56C2 /* RainingHeartsProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainingHeartsProgram.swift; sourceTree = "<group>"; };
 		037857D9204BF9D000A0A57D /* Whirlwind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whirlwind.swift; sourceTree = "<group>"; };
 		037857DB204C036A00A0A57D /* DripProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DripProgram.swift; sourceTree = "<group>"; };
+		039123662057824300BD33AD /* MushroomProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MushroomProgram.swift; sourceTree = "<group>"; };
 		03EF0EC6204B918D003741FE /* BallProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallProgram.swift; sourceTree = "<group>"; };
 		03EF0EC8204B97FC003741FE /* ProgramSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramSelector.swift; sourceTree = "<group>"; };
 		03EF0ECA204BAA00003741FE /* PebblesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PebblesProgram.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				03EF0ECE204BAA01003741FE /* GravelProgram.swift */,
 				03EF0ECD204BAA01003741FE /* MoveProgram.swift */,
 				03EF0ED8204BCBC4003741FE /* MandalaProgram.swift */,
+				039123662057824300BD33AD /* MushroomProgram.swift */,
 				03EF0EC6204B918D003741FE /* BallProgram.swift */,
 				03EF0EDC204BE468003741FE /* SparklerProgram.swift */,
 				037857D9204BF9D000A0A57D /* Whirlwind.swift */,
@@ -445,6 +448,7 @@
 				607FACD81AFB9204008FA782 /* AppViewController.swift in Sources */,
 				03EF0ED3204BAA01003741FE /* GravelProgram.swift in Sources */,
 				03EF0EC9204B97FC003741FE /* ProgramSelector.swift in Sources */,
+				039123672057824300BD33AD /* MushroomProgram.swift in Sources */,
 				03EF0ED2204BAA01003741FE /* MoveProgram.swift in Sources */,
 				03EF0EC7204B918D003741FE /* BallProgram.swift in Sources */,
 				03EF0ED6204BC9CD003741FE /* DotsAndLinesProgram.swift in Sources */,
