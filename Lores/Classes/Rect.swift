@@ -33,4 +33,15 @@ public struct Rect {
     public func randomX() -> Int { return origin.x + size.randomX() }
     public func randomY() -> Int { return origin.y + size.randomY() }
     public func randomPoint() -> Point { return Point(x: randomX(), y: randomY()) }
+
+    public func isValidPoint(_ p: Point) -> Bool {
+        return p.x >= minX && p.y >= minY && p.x <= maxX && p.y <= maxY
+    }
+
+    public func checkPoint(_ point: Point) {
+        assert(point.x >= minX, "x must be >= \(minX)")
+        assert(point.y >= minY, "y must be >= \(minY)")
+        assert(point.x <= maxX, "x must be <= \(maxX)")
+        assert(point.y <= maxY, "y must be <= \(maxY)")
+    }
 }

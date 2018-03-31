@@ -1,6 +1,6 @@
 import Lores
 
-class SwiftLesson1: SwiftLesson {
+class SwiftLesson1Page1: SwiftLesson {
     init() {
         let landscape = Landscape(
             rows: [

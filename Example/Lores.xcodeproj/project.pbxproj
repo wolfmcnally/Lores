@@ -11,6 +11,8 @@
 		037857DA204BF9D000A0A57D /* Whirlwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037857D9204BF9D000A0A57D /* Whirlwind.swift */; };
 		037857DC204C036A00A0A57D /* DripProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037857DB204C036A00A0A57D /* DripProgram.swift */; };
 		039123672057824300BD33AD /* MushroomProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039123662057824300BD33AD /* MushroomProgram.swift */; };
+		0391236B2058816100BD33AD /* SwiftLesson1Page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0391236A2058816100BD33AD /* SwiftLesson1Page2.swift */; };
+		0391236D2058851C00BD33AD /* SwiftLesson1Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0391236C2058851C00BD33AD /* SwiftLesson1Page3.swift */; };
 		03EF0EC7204B918D003741FE /* BallProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF0EC6204B918D003741FE /* BallProgram.swift */; };
 		03EF0EC9204B97FC003741FE /* ProgramSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF0EC8204B97FC003741FE /* ProgramSelector.swift */; };
 		03EF0ECF204BAA01003741FE /* PebblesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF0ECA204BAA00003741FE /* PebblesProgram.swift */; };
@@ -30,7 +32,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		79244810205489C700E4FF7D /* SargonChessboardProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7924480F205489C700E4FF7D /* SargonChessboardProgram.swift */; };
-		792F7B702055142C0058C5BC /* SwiftLesson1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F7B6F2055142C0058C5BC /* SwiftLesson1.swift */; };
+		792F7B702055142C0058C5BC /* SwiftLesson1Page1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F7B6F2055142C0058C5BC /* SwiftLesson1Page1.swift */; };
 		792F7B722055B4830058C5BC /* SwiftLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F7B712055B4830058C5BC /* SwiftLesson.swift */; };
 		91AAD5695207A85BCDE24950 /* Pods_Lores_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C418086A4D772CAAA54F354A /* Pods_Lores_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +52,8 @@
 		037857D9204BF9D000A0A57D /* Whirlwind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whirlwind.swift; sourceTree = "<group>"; };
 		037857DB204C036A00A0A57D /* DripProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DripProgram.swift; sourceTree = "<group>"; };
 		039123662057824300BD33AD /* MushroomProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MushroomProgram.swift; sourceTree = "<group>"; };
+		0391236A2058816100BD33AD /* SwiftLesson1Page2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLesson1Page2.swift; sourceTree = "<group>"; };
+		0391236C2058851C00BD33AD /* SwiftLesson1Page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLesson1Page3.swift; sourceTree = "<group>"; };
 		03EF0EC6204B918D003741FE /* BallProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallProgram.swift; sourceTree = "<group>"; };
 		03EF0EC8204B97FC003741FE /* ProgramSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramSelector.swift; sourceTree = "<group>"; };
 		03EF0ECA204BAA00003741FE /* PebblesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PebblesProgram.swift; sourceTree = "<group>"; };
@@ -78,7 +82,7 @@
 		74FD27F7513D557CD2EB01E8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		77BFF7B26D62F5A7628CA030 /* Pods-Lores_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Tests/Pods-Lores_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7924480F205489C700E4FF7D /* SargonChessboardProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SargonChessboardProgram.swift; sourceTree = "<group>"; };
-		792F7B6F2055142C0058C5BC /* SwiftLesson1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLesson1.swift; sourceTree = "<group>"; };
+		792F7B6F2055142C0058C5BC /* SwiftLesson1Page1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLesson1Page1.swift; sourceTree = "<group>"; };
 		792F7B712055B4830058C5BC /* SwiftLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLesson.swift; sourceTree = "<group>"; };
 		C418086A4D772CAAA54F354A /* Pods_Lores_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lores_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7ADB31FE1336D4A9AAEA618 /* Pods-Lores_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example/Pods-Lores_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +128,9 @@
 				0312313B205115BB007A56C2 /* RainingHeartsProgram.swift */,
 				7924480F205489C700E4FF7D /* SargonChessboardProgram.swift */,
 				792F7B712055B4830058C5BC /* SwiftLesson.swift */,
-				792F7B6F2055142C0058C5BC /* SwiftLesson1.swift */,
+				792F7B6F2055142C0058C5BC /* SwiftLesson1Page1.swift */,
+				0391236A2058816100BD33AD /* SwiftLesson1Page2.swift */,
+				0391236C2058851C00BD33AD /* SwiftLesson1Page3.swift */,
 			);
 			path = Programs;
 			sourceTree = "<group>";
@@ -272,7 +278,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -439,7 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03EF0ED7204BC9CD003741FE /* RectanglesProgram.swift in Sources */,
-				792F7B702055142C0058C5BC /* SwiftLesson1.swift in Sources */,
+				792F7B702055142C0058C5BC /* SwiftLesson1Page1.swift in Sources */,
 				03EF0ED0204BAA01003741FE /* HelloPixelProgram.swift in Sources */,
 				792F7B722055B4830058C5BC /* SwiftLesson.swift in Sources */,
 				037857DC204C036A00A0A57D /* DripProgram.swift in Sources */,
@@ -451,12 +457,14 @@
 				039123672057824300BD33AD /* MushroomProgram.swift in Sources */,
 				03EF0ED2204BAA01003741FE /* MoveProgram.swift in Sources */,
 				03EF0EC7204B918D003741FE /* BallProgram.swift in Sources */,
+				0391236B2058816100BD33AD /* SwiftLesson1Page2.swift in Sources */,
 				03EF0ED6204BC9CD003741FE /* DotsAndLinesProgram.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				03EF0ED9204BCBC4003741FE /* MandalaProgram.swift in Sources */,
 				03EF0ECF204BAA01003741FE /* PebblesProgram.swift in Sources */,
 				0312313C205115BB007A56C2 /* RainingHeartsProgram.swift in Sources */,
 				03EF0EDD204BE468003741FE /* SparklerProgram.swift in Sources */,
+				0391236D2058851C00BD33AD /* SwiftLesson1Page3.swift in Sources */,
 				03EF0ED1204BAA01003741FE /* EmptyProgram.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,12 +519,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -564,12 +574,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

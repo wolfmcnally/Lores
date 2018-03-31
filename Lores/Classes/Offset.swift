@@ -30,10 +30,52 @@ extension Offset: Equatable {
     }
 }
 
+public func + (lhs: Offset, rhs: Offset) -> Offset {
+    return Offset(dx: lhs.dx + rhs.dx, dy: lhs.dy + rhs.dy)
+}
+
+public func += (lhs: inout Offset, rhs: Offset) {
+    lhs = lhs + rhs
+}
+
 extension Offset: CustomStringConvertible {
     public var description: String {
         get {
             return "Offset(dx:\(dx) dy:\(dy))"
+        }
+    }
+}
+
+public enum Heading {
+    case up
+    case left
+    case down
+    case right
+
+    public var offset: Offset {
+        switch self {
+        case .up: return .up
+        case .left: return .left
+        case .down: return .down
+        case .right: return .right
+        }
+    }
+
+    public var nextClockwise: Heading {
+        switch self {
+        case .up: return .right
+        case .left: return .up
+        case .down: return .left
+        case .right: return .down
+        }
+    }
+
+    public var nextCounterClockwise: Heading {
+        switch self {
+        case .up: return .left
+        case .left: return .down
+        case .down: return .right
+        case .right: return .up
         }
     }
 }

@@ -18,6 +18,10 @@ public struct Shape {
         self.rows = rows
     }
 
+    public var size: Size {
+        return Size(width: rows[0].count, height: rows.count)
+    }
+
     public enum Mode {
         case fence  // abort if pixels are drawn outside of canvas
         case wrap   // pixels drawn off one side of the canvas are drawn on the other

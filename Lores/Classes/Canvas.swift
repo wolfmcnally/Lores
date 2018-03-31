@@ -85,12 +85,12 @@ public class Canvas {
     }
 
     deinit {
-        argb8Data.deallocate(capacity: Int(chunkyBytesCount))
-        argb8PremultipliedData.deallocate(capacity: Int(chunkyBytesCount))
-        alphaFData.deallocate(capacity: Int(planarFloatsCount))
-        redFData.deallocate(capacity: Int(planarFloatsCount))
-        greenFData.deallocate(capacity: Int(planarFloatsCount))
-        blueFData.deallocate(capacity: Int(planarFloatsCount))
+        argb8Data.deallocate()
+        argb8PremultipliedData.deallocate()
+        alphaFData.deallocate()
+        redFData.deallocate()
+        greenFData.deallocate()
+        blueFData.deallocate()
     }
 
     public var image: UIImage {

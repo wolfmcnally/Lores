@@ -2,12 +2,12 @@ import Lores
 
 class SargonChessboardProgram: Program {
     let boardSize = Size(width: 8, height: 8)
-    let cellSize = Size(width: 12, height: 12)
+    let tileSize = Size(width: 12, height: 12)
 
     lazy var bounds = boardSize.bounds
 
-    lazy var squaresLayer = Board<SquareCellValue>(size: boardSize, cellSize: cellSize)
-    lazy var piecesLayer = Board<PieceCellValue>(size: boardSize, cellSize: cellSize)
+    lazy var squaresLayer = Board<SquareTileValue>(size: boardSize, tileSize: tileSize)
+    lazy var piecesLayer = Board<PieceTileValue>(size: boardSize, tileSize: tileSize)
 
     override func setup() {
         canvasSize = squaresLayer.canvasSize
@@ -16,10 +16,10 @@ class SargonChessboardProgram: Program {
             for x in bounds.minX ... bounds.maxX {
                 let point = Point(x: x, y: y)
 
-                let squareValue = SquareCellValue(point: point)
+                let squareValue = SquareTileValue(point: point)
                 squaresLayer[point] = squareValue
 
-                if let pieceValue = PieceCellValue.startingValueAtPoint(point) {
+                if let pieceValue = PieceTileValue.startingValueAtPoint(point) {
                     piecesLayer[point] = pieceValue
                 }
             }
@@ -31,8 +31,8 @@ class SargonChessboardProgram: Program {
         piecesLayer.draw(into: canvas)
     }
 
-    struct SquareCellValue: CellValue {
-        private typealias `Self` = SquareCellValue
+    struct SquareTileValue: TileValue {
+        private typealias `Self` = SquareTileValue
 
         let point: Point
         let squareColor: SquareColor
@@ -66,7 +66,7 @@ class SargonChessboardProgram: Program {
         )
     }
 
-    struct PieceCellValue: CellValue {
+    struct PieceTileValue: TileValue {
         var piece: Piece
         var pieceColor: PieceColor
 
@@ -108,10 +108,10 @@ class SargonChessboardProgram: Program {
             }
         }
 
-        static func startingValueAtPoint(_ point: Point) -> PieceCellValue? {
+        static func startingValueAtPoint(_ point: Point) -> PieceTileValue? {
             guard let piece = startingPieceAtPoint(point) else { return nil }
             let color = startingColorAtPoint(point)
-            return PieceCellValue(piece: piece, pieceColor: color)
+            return PieceTileValue(piece: piece, pieceColor: color)
         }
     }
 

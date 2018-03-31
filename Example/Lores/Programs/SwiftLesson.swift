@@ -4,26 +4,37 @@ import func WolfCore.dispatchOnMain
 import Dispatch
 
 public class SwiftLesson: Program {
-    private let boardSize = Size(width: 5, height: 5)
-    private let cellSize = Size(width: 5, height: 5)
+    private let boardSize: Size
+    private let tileSize = LandscapeTileValue.pathShape.size
     private let runQueue = DispatchQueue(label: "run")
 
-    private lazy var landscapeLayer = Board<LandscapeCellValue>(size: boardSize, cellSize: cellSize)
-    private lazy var floatingLayer = Board<FloatingCellValue>(size: boardSize, cellSize: cellSize)
+    private lazy var landscapeLayer = Board<LandscapeTileValue>(size: boardSize, tileSize: tileSize)
+    private lazy var groundLayer = Board<GroundTileValue>(size: boardSize, tileSize: tileSize)
+    private lazy var floatingLayer = Board<FloatingTileValue>(size: boardSize, tileSize: tileSize)
 
     private var player: Player!
     private let landscape: Landscape
     private var gemCount: Int {
         didSet {
             if gemCount == 0 {
-                print("All gems collected!")
+                print("❤️ ALL GEMS COLLECTED!")
+            }
+        }
+    }
+
+    private var offTogglesCount: Int {
+        didSet {
+            if offTogglesCount == 0 {
+                print("❤️ ALL SWITCHES ON!")
             }
         }
     }
 
     public init(landscape: Landscape) {
         self.landscape = landscape
+        boardSize = landscape.size
         gemCount = 0
+        offTogglesCount = 0
         super.init()
         
         for y in 0 ..< landscape.rows.count {
@@ -31,13 +42,23 @@ public class SwiftLesson: Program {
             for (x, c) in row.enumerated() {
                 let p = Point(x: x, y: y)
 
-                landscapeLayer[p] = LandscapeCellValue.tile(for: c)
+                landscapeLayer[p] = LandscapeTileValue.tile(for: c)
+
+                if let tile = GroundTileValue.tile(for: c) {
+                    groundLayer[p] = tile
+                    switch tile {
+                    case .toggle(let state):
+                        if !state {
+                            offTogglesCount += 1
+                        }
+                    }
+                }
 
                 if let heading = Player.heading(for: c) {
                     self.player = Player(heading: heading, boardPosition: p)
                 }
 
-                if let tile = FloatingCellValue.tile(for: c) {
+                if let tile = FloatingTileValue.tile(for: c) {
                     floatingLayer[p] = tile
                     if tile == .gem {
                         gemCount += 1
@@ -52,7 +73,8 @@ public class SwiftLesson: Program {
         canvasSize = landscapeLayer.canvasSize
         framesPerSecond = 10
 
-        screenSpec = ScreenSpec(layerSpecs: [
+        screenSpec = ScreenSpec(mainLayer: 2, layerSpecs: [
+            LayerSpec(),
             LayerSpec(),
             LayerSpec(clearColor: .clear),
             LayerSpec()
@@ -68,12 +90,68 @@ public class SwiftLesson: Program {
 
     public override func draw() {
         landscapeLayer.draw(into: layers[0])
-        player.draw(into: layers[1])
-        floatingLayer.draw(into: layers[2])
+        groundLayer.draw(into: layers[1])
+        player.draw(into: layers[2])
+        floatingLayer.draw(into: layers[3])
     }
 
-    enum LandscapeCellValue: CellValue {
-        private typealias `Self` = LandscapeCellValue
+    enum GroundTileValue: TileValue {
+        private typealias `Self` = GroundTileValue
+
+        case toggle(Bool)
+
+        var shape: Shape {
+            switch self {
+            case .toggle(let isOn): return isOn ? Self.toggleOnShape : Self.toggleOffShape
+            }
+        }
+
+        static func tile(for c: Character) -> GroundTileValue? {
+            switch c {
+            case "🔳": return .toggle(false)
+            case "🔲": return .toggle(true)
+            default:
+                return nil
+            }
+        }
+
+        static let toggleOffShape = Shape(
+            colors:
+            ColorTable([
+                "❔": nil,
+                "💣": .darkGray
+                ]),
+            rows: [
+                "❔❔💣💣💣❔❔",
+                "❔💣💣💣💣💣❔",
+                "💣💣💣💣💣💣💣",
+                "💣💣💣💣💣💣💣",
+                "💣💣💣💣💣💣💣",
+                "❔💣💣💣💣💣❔",
+                "❔❔💣💣💣❔❔"
+            ]
+        )
+
+        static let toggleOnShape = Shape(
+            colors:
+            ColorTable([
+                "❔": nil,
+                "🦋": .cyan
+                ]),
+            rows: [
+                "❔❔🦋🦋🦋❔❔",
+                "❔🦋🦋🦋🦋🦋❔",
+                "🦋🦋🦋🦋🦋🦋🦋",
+                "🦋🦋🦋🦋🦋🦋🦋",
+                "🦋🦋🦋🦋🦋🦋🦋",
+                "❔🦋🦋🦋🦋🦋❔",
+                "❔❔🦋🦋🦋❔❔"
+            ]
+        )
+    }
+
+    enum LandscapeTileValue: TileValue {
+        private typealias `Self` = LandscapeTileValue
 
         case path
         case rough
@@ -87,9 +165,9 @@ public class SwiftLesson: Program {
             }
         }
 
-        static func tile(for c: Character) -> LandscapeCellValue {
+        static func tile(for c: Character) -> LandscapeTileValue {
             switch c {
-            case "⬆️", "⬅️", "⬇️", "➡️", "🍋", "❤️": return .path
+            case "⬆️", "⬅️", "⬇️", "➡️", "🍋", "❤️", "🔳", "🔲": return .path
             case "🍏": return .rough
             case "🦋": return .water
             default:
@@ -98,12 +176,19 @@ public class SwiftLesson: Program {
         }
 
         static let pathShape = Shape(
+            colors:
+            ColorTable([
+                "🍋": .yellow,
+                "🐻": Color.yellow.darkened(by: 0.05)
+                ]),
             rows: [
-                "🍋🍋🍋🍋🍋",
-                "🍋🍋🍋🍋🍋",
-                "🍋🍋🍋🍋🍋",
-                "🍋🍋🍋🍋🍋",
-                "🍋🍋🍋🍋🍋"
+                "🐻🐻🐻🐻🐻🐻🐻",
+                "🐻🍋🍋🍋🍋🍋🐻",
+                "🐻🍋🍋🍋🍋🍋🐻",
+                "🐻🍋🍋🍋🍋🍋🐻",
+                "🐻🍋🍋🍋🍋🍋🐻",
+                "🐻🍋🍋🍋🍋🍋🐻",
+                "🐻🐻🐻🐻🐻🐻🐻"
             ]
         )
 
@@ -114,11 +199,13 @@ public class SwiftLesson: Program {
                 "🐻": .brown
                 ]),
             rows: [
-                "💣🐻🐻🐻🐻",
-                "🐻💣🐻🐻🐻",
-                "🐻🐻🐻🐻💣",
-                "🐻🐻💣🐻🐻",
-                "🐻🐻🐻🐻🐻",
+                "🐻🐻🐻🐻🐻🐻🐻",
+                "🐻💣🐻🐻🐻🐻🐻",
+                "🐻🐻💣🐻🐻🐻🐻",
+                "🐻🐻🐻🐻🐻💣🐻",
+                "🐻🐻🐻💣🐻🐻🐻",
+                "🐻🐻🐻🐻🐻🐻🐻",
+                "🐻🐻🐻🐻🐻🐻🐻"
                 ]
         )
 
@@ -129,11 +216,13 @@ public class SwiftLesson: Program {
                 "🦋": .blue
                 ]),
             rows: [
-                "🦋🦋🦋🦋🦋",
-                "🦋🦋💭🦋🦋",
-                "🦋💭🦋💭🦋",
-                "🦋🦋🦋🦋🦋",
-                "🦋🦋🦋🦋🦋"
+                "🦋🦋🦋🦋🦋🦋🦋",
+                "🦋🦋🦋🦋🦋🦋🦋",
+                "🦋🦋🦋💭🦋🦋🦋",
+                "🦋🦋💭🦋💭🦋🦋",
+                "🦋🦋🦋🦋🦋🦋🦋",
+                "🦋🦋🦋🦋🦋🦋🦋",
+                "🦋🦋🦋🦋🦋🦋🦋"
             ]
         )
     }
@@ -141,19 +230,22 @@ public class SwiftLesson: Program {
     struct Player: Sprite {
         private typealias `Self` = Player
 
-        enum Heading {
-            case up
-            case left
-            case down
-            case right
-        }
+        private let tileSize = Self.upShape.size
 
-        private let cellSize = Size(width: 5, height: 5)
+        init(heading: Heading, boardPosition: Point, offset: Offset = .zero) {
+            self.heading = heading
+            self.boardPosition = boardPosition
+            self.offset = offset
+        }
 
         var heading: Heading
         var boardPosition: Point
+        var offset: Offset
         var position: Point {
-            return Point(x: boardPosition.x * cellSize.width, y: boardPosition.y * cellSize.height)
+            return Point(
+                x: boardPosition.x * tileSize.width + offset.dx,
+                y: boardPosition.y * tileSize.height + offset.dy
+            )
         }
         let mode: Shape.Mode = .clip
 
@@ -183,47 +275,55 @@ public class SwiftLesson: Program {
 
         static let upShape = Shape(
             rows: [
-                "❔❔🍊❔❔",
-                "❔🍏🍊🍏❔",
-                "❔🍏🍊🍏❔",
-                "❔🍏🍏🍏❔",
-                "❔❔❔❔❔"
+                "❔❔❔❔❔❔❔",
+                "❔❔🍊🍊🍊❔❔",
+                "❔🍊💭💣💭🍊❔",
+                "❔🍊🍏🍏🍏🍊❔",
+                "❔🍊🍊🍊🍊🍊❔",
+                "❔❔🍊🍊🍊❔❔",
+                "❔❔❔❔❔❔❔"
             ]
         )
 
         static let leftShape = Shape(
             rows: [
-                "❔❔❔❔❔",
-                "❔🍏🍏🍏❔",
-                "🍊🍊🍊🍏❔",
-                "❔🍏🍏🍏❔",
-                "❔❔❔❔❔"
+                "❔❔❔❔❔❔❔",
+                "❔❔🍊🍊🍊❔❔",
+                "❔🍊💭🍏🍊🍊❔",
+                "❔🍊💣🍏🍊🍊❔",
+                "❔🍊💭🍏🍊🍊❔",
+                "❔❔🍊🍊🍊❔❔",
+                "❔❔❔❔❔❔❔"
             ]
         )
 
         static let downShape = Shape(
             rows: [
-                "❔❔❔❔❔",
-                "❔🍏🍏🍏❔",
-                "❔🍏🍊🍏❔",
-                "❔🍏🍊🍏❔",
-                "❔❔🍊❔❔"
+                "❔❔❔❔❔❔❔",
+                "❔❔🍊🍊🍊❔❔",
+                "❔🍊🍊🍊🍊🍊❔",
+                "❔🍊🍏🍏🍏🍊❔",
+                "❔🍊💭💣💭🍊❔",
+                "❔❔🍊🍊🍊❔❔",
+                "❔❔❔❔❔❔❔"
             ]
         )
 
         static let rightShape = Shape(
             rows: [
-                "❔❔❔❔❔",
-                "❔🍏🍏🍏❔",
-                "❔🍏🍊🍊🍊",
-                "❔🍏🍏🍏❔",
-                "❔❔❔❔❔"
+                "❔❔❔❔❔❔❔",
+                "❔❔🍊🍊🍊❔❔",
+                "❔🍊🍊🍏💭🍊❔",
+                "❔🍊🍊🍏💣🍊❔",
+                "❔🍊🍊🍏💭🍊❔",
+                "❔❔🍊🍊🍊❔❔",
+                "❔❔❔❔❔❔❔"
             ]
         )
     }
 
-    enum FloatingCellValue: CellValue {
-        private typealias `Self` = FloatingCellValue
+    enum FloatingTileValue: TileValue {
+        private typealias `Self` = FloatingTileValue
 
         case gem
 
@@ -234,7 +334,7 @@ public class SwiftLesson: Program {
             }
         }
 
-        static func tile(for c: Character) -> FloatingCellValue? {
+        static func tile(for c: Character) -> FloatingTileValue? {
             switch c {
             case "❤️": return .gem
             default:
@@ -249,17 +349,49 @@ public class SwiftLesson: Program {
                 "❤️": Color.red.withAlphaComponent(0.8)
                 ]),
             rows: [
-                "❔❔❔❔❔",
-                "❔❔❤️❔❔",
-                "❔❤️❤️❤️❔",
-                "❔❔❤️❔❔",
-                "❔❔❔❔❔"
+                "❔❔❔❔❔❔❔",
+                "❔❔❔❔❔❔❔",
+                "❔❔❔❤️❔❔❔",
+                "❔❔❤️❤️❤️❔❔",
+                "❔❔❔❤️❔❔❔",
+                "❔❔❔❔❔❔❔",
+                "❔❔❔❔❔❔❔"
             ]
         )
     }
 
     public struct Landscape {
         public var rows: [String]
+
+        public var size: Size {
+            return Size(width: rows[0].count, height: rows.count)
+        }
+    }
+
+    private func isPath(at point: Point) -> Bool {
+        guard landscapeLayer.bounds.isValidPoint(point) else { return false }
+        guard landscapeLayer[point] == .path else { return false }
+        return true
+    }
+
+    private func moveForward(animated: Bool) {
+        defer {
+            player.boardPosition += player.heading.offset
+        }
+
+        guard animated else { return }
+        for _ in 0 ..< tileSize.width {
+            player.offset += player.heading.offset
+            delay(0.1)
+        }
+        player.offset = .zero
+    }
+
+    private func moveBlocked(animated: Bool) {
+        guard animated else { return }
+        player.offset += player.heading.offset
+        delay(0.1)
+        player.offset = .zero
     }
 }
 
@@ -268,11 +400,29 @@ extension SwiftLesson {
         Thread.sleep(until: Date(timeIntervalSinceNow: timeInterval))
     }
 
-    public func moveForward() {
-        defer { delay() }
-        print("moveForward")
+    public var isBlocked: Bool {
+        let point = player.boardPosition + player.heading.offset
+        return !isPath(at: point)
+    }
 
-        player.boardPosition.x += 1
+    public func moveForward() {
+        defer { delay(0.5) }
+
+        guard !isBlocked else {
+            print("➡️ moveForward: 🚫 BLOCKED")
+            moveBlocked(animated: true)
+            return
+        }
+
+        print("➡️ moveForward: 👍🏼")
+        moveForward(animated: true)
+    }
+
+    public func turnLeft() {
+        defer { delay() }
+
+        print("↪️ turnLeft: 👍🏼")
+        player.heading = player.heading.nextCounterClockwise
     }
 
     private var hasGem: Bool {
@@ -281,10 +431,44 @@ extension SwiftLesson {
 
     public func collectGem() {
         defer { delay() }
-        print("collectGem")
 
-        guard hasGem else { return }
+        guard hasGem else {
+            print("💎 collectGem: 🚫 NO GEM")
+            return
+        }
+
+        print("💎 collectGem: 👍🏼")
+
         floatingLayer[player.boardPosition] = nil
         gemCount -= 1
+    }
+
+    public var hasSwitch: Bool {
+        switch groundLayer[player.boardPosition] {
+        case .toggle?:
+            return true
+        default:
+            return false
+        }
+    }
+
+    public func toggleSwitch() {
+        defer { delay() }
+
+        switch groundLayer[player.boardPosition] {
+        case .toggle(let state)?:
+            switch state {
+            case false:
+                print("🔲 toggleSwitch: 👍🏼 ON")
+                offTogglesCount -= 1
+                groundLayer[player.boardPosition] = .toggle(true)
+            case true:
+                print("🔲 toggleSwitch: 👍🏼 OFF")
+                offTogglesCount += 1
+                groundLayer[player.boardPosition] = .toggle(false)
+            }
+        default:
+            print("🔲 toggleSwitch: 🚫 NO SWITCH")
+        }
     }
 }
