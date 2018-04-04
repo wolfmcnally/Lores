@@ -1,0 +1,28 @@
+PODS:
+  - CommonCryptoModule (1.0.2)
+  - Lores (0.1.0):
+    - WolfCore (~> 2.2)
+  - SwiftLint (0.25.0)
+  - WolfCore (2.2.0):
+    - CommonCryptoModule
+    - SwiftLint
+
+DEPENDENCIES:
+  - Lores (from `../`)
+  - WolfCore (from `../../WolfCore/`)
+
+EXTERNAL SOURCES:
+  Lores:
+    :path: ../
+  WolfCore:
+    :path: ../../WolfCore/
+
+SPEC CHECKSUMS:
+  CommonCryptoModule: 63a68b57abed79655b3a01011419bf037a05b0a0
+  Lores: 52ca95c253b587e4a1f7ffdd3534720cff4c626c
+  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
+  WolfCore: 304b174ff5453bc4ddce0ac7f7096256d6cdfc58
+
+PODFILE CHECKSUM: e6e87a11dd22dce7e91b9e585f974fa9976f9da0
+
+COCOAPODS: 1.4.0

@@ -1,6 +1,6 @@
 # Lores
 
-[![CI Status](http://img.shields.io/travis/ironwolf/Lores.svg?style=flat)](https://travis-ci.org/ironwolf/Lores)
+[![CI Status](http://img.shields.io/travis/wolfmcnally/Lores.svg?style=flat)](https://travis-ci.org/wolfmcnally/Lores)
 [![Version](https://img.shields.io/cocoapods/v/Lores.svg?style=flat)](http://cocoapods.org/pods/Lores)
 [![License](https://img.shields.io/cocoapods/l/Lores.svg?style=flat)](http://cocoapods.org/pods/Lores)
 [![Platform](https://img.shields.io/cocoapods/p/Lores.svg?style=flat)](http://cocoapods.org/pods/Lores)
@@ -22,7 +22,7 @@ pod 'Lores'
 
 ## Author
 
-ironwolf, wolf@wolfmcnally.com
+wolfmcnally, wolf@wolfmcnally.com
 
 ## License
 
