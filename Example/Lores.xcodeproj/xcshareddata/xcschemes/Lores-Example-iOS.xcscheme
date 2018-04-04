@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "Lores_Example.app"
-               BlueprintName = "Lores_Example"
+               BuildableName = "Lores_Example_iOS.app"
+               BlueprintName = "Lores_Example_iOS"
                ReferencedContainer = "container:Lores.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Lores_Example.app"
-            BlueprintName = "Lores_Example"
+            BuildableName = "Lores_Example_iOS.app"
+            BlueprintName = "Lores_Example_iOS"
             ReferencedContainer = "container:Lores.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -80,8 +80,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Lores_Example.app"
-            BlueprintName = "Lores_Example"
+            BuildableName = "Lores_Example_iOS.app"
+            BlueprintName = "Lores_Example_iOS"
             ReferencedContainer = "container:Lores.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -99,8 +99,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Lores_Example.app"
-            BlueprintName = "Lores_Example"
+            BuildableName = "Lores_Example_iOS.app"
+            BlueprintName = "Lores_Example_iOS"
             ReferencedContainer = "container:Lores.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

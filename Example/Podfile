@@ -1,6 +1,6 @@
 use_frameworks!
 
-target 'Lores_Example' do
+target 'Lores_Example_iOS' do
   platform :ios, '11.3'
   pod 'Lores', :path => '../'
   pod 'WolfCore', :path => '../../WolfCore/'

@@ -1,6 +1,6 @@
 PODS:
   - CommonCryptoModule (1.0.2)
-  - Lores (0.1.0):
+  - Lores (0.2.0):
     - WolfCore (~> 2.2)
   - SwiftLint (0.25.0)
   - WolfCore (2.2.0):
@@ -19,10 +19,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CommonCryptoModule: 63a68b57abed79655b3a01011419bf037a05b0a0
-  Lores: 52ca95c253b587e4a1f7ffdd3534720cff4c626c
+  Lores: ab739a7f496c5dc47e6529b87ff2dc8327cd9cd6
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
   WolfCore: 304b174ff5453bc4ddce0ac7f7096256d6cdfc58
 
-PODFILE CHECKSUM: e6e87a11dd22dce7e91b9e585f974fa9976f9da0
+PODFILE CHECKSUM: ad480d84c3040183b37f7f07b4c6d2852f70110f
 
 COCOAPODS: 1.4.0
