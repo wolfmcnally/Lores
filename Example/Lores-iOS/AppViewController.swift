@@ -11,8 +11,8 @@ import Lores
 
 class AppViewController: ViewController {
 
-//    private lazy var programView: ProgramView = .init() • { 🍒 in
-//    }
+    private lazy var programView: ProgramView = .init() • { 🍒 in
+    }
 
     override var prefersStatusBarHidden : Bool {
         return true
@@ -33,7 +33,7 @@ class AppViewController: ViewController {
         programView.backgroundTintColor = UIColor.white.darkened(by: 0.9)
         
         programView.constrainFrameToFrame()
-//        programView.program = program
+        programView.program = program
         programView.program.didDisplay = {
             self.programView.flush()
         }
