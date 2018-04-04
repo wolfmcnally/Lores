@@ -15,6 +15,7 @@ A framework for learning programming using low-resolution (lores) graphics. This
   s.swift_version = '4.1'
 
   s.ios.deployment_target = '11.3'
+  s.macos.deployment_target = '10.13'
 
   s.source_files = 'Lores/Classes/**/*'
   s.dependency 'WolfCore', '~> 2.2'

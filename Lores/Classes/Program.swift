@@ -8,10 +8,12 @@
 import WolfCore
 
 public struct ScreenSpec {
+    public var canvasSize: Size
     public var mainLayer: Int
     public var layerSpecs: [LayerSpec]
 
-    public init(mainLayer: Int = 1, layerSpecs: [LayerSpec]) {
+    public init(canvasSize: Size = Size(width: 40, height: 40), mainLayer: Int = 1, layerSpecs: [LayerSpec]) {
+        self.canvasSize = canvasSize
         self.mainLayer = mainLayer
         self.layerSpecs = layerSpecs
     }
@@ -37,7 +39,6 @@ open class Program {
     public var onScreenChanged: ((ScreenSpec) -> Void)?
 
     public var screenSpec = ScreenSpec(
-        mainLayer: 1,
         layerSpecs: [
             LayerSpec(clearColor: Color(color: .white, alpha: 0.05)),
             LayerSpec(clearColor: .clear)
@@ -71,17 +72,12 @@ open class Program {
             let layer = Canvas(size: canvasSize, clearColor: layerSpec.clearColor)
             layers.append(layer)
         }
-        onScreenChanged?(self.screenSpec)
+        onScreenChanged?(screenSpec)
     }
 
     public var canvasSize: Size {
-        get {
-            return _canvasSize
-        }
-        set {
-            _canvasSize = newValue
-            resetScreen()
-        }
+        get { return screenSpec.canvasSize }
+        set { screenSpec.canvasSize = newValue }
     }
 
     private var displayLink: DisplayLink?

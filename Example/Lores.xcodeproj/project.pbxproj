@@ -7,43 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		031B64D12074769500D3A0EA /* MandalaProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B02074769400D3A0EA /* MandalaProgram.swift */; };
+		030ADD59207491CF00AA6FF0 /* ProgramSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64D02074769500D3A0EA /* ProgramSelector.swift */; };
+		030ADD5A207491DE00AA6FF0 /* Mandala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B02074769400D3A0EA /* Mandala.swift */; };
+		030ADD5B207491DE00AA6FF0 /* SwiftLesson1Page1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B12074769400D3A0EA /* SwiftLesson1Page1.swift */; };
+		030ADD5C207491DE00AA6FF0 /* SwiftLesson1Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B22074769400D3A0EA /* SwiftLesson1Page3.swift */; };
+		030ADD5D207491DE00AA6FF0 /* Pebbles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B32074769400D3A0EA /* Pebbles.swift */; };
+		030ADD5E207491DE00AA6FF0 /* TheDrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B42074769400D3A0EA /* TheDrip.swift */; };
+		030ADD5F207491DE00AA6FF0 /* Gravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B52074769400D3A0EA /* Gravel.swift */; };
+		030ADD60207491DE00AA6FF0 /* SwiftLesson1Page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B62074769400D3A0EA /* SwiftLesson1Page2.swift */; };
+		030ADD61207491DE00AA6FF0 /* Whirlwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C32074769400D3A0EA /* Whirlwind.swift */; };
+		030ADD62207491DE00AA6FF0 /* Rectangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C42074769400D3A0EA /* Rectangles.swift */; };
+		030ADD63207491DE00AA6FF0 /* RainingHearts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C52074769400D3A0EA /* RainingHearts.swift */; };
+		030ADD64207491DE00AA6FF0 /* SwiftLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C62074769400D3A0EA /* SwiftLesson.swift */; };
+		030ADD65207491DE00AA6FF0 /* SargonChessboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C72074769400D3A0EA /* SargonChessboard.swift */; };
+		030ADD66207491DE00AA6FF0 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C82074769400D3A0EA /* Ball.swift */; };
+		030ADD67207491DE00AA6FF0 /* Sparkler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C92074769400D3A0EA /* Sparkler.swift */; };
+		030ADD68207491DE00AA6FF0 /* HelloPixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CA2074769500D3A0EA /* HelloPixel.swift */; };
+		030ADD69207491DE00AA6FF0 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CB2074769500D3A0EA /* Move.swift */; };
+		030ADD6A207491DE00AA6FF0 /* Mushroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CC2074769500D3A0EA /* Mushroom.swift */; };
+		030ADD6B207491DE00AA6FF0 /* EmptyProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CD2074769500D3A0EA /* EmptyProgram.swift */; };
+		030ADD6C207491DE00AA6FF0 /* DotsAndLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CE2074769500D3A0EA /* DotsAndLines.swift */; };
+		030ADD6D2074920400AA6FF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031B64CF2074769500D3A0EA /* Images.xcassets */; };
+		031B64D12074769500D3A0EA /* Mandala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B02074769400D3A0EA /* Mandala.swift */; };
 		031B64D22074769500D3A0EA /* SwiftLesson1Page1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B12074769400D3A0EA /* SwiftLesson1Page1.swift */; };
 		031B64D32074769500D3A0EA /* SwiftLesson1Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B22074769400D3A0EA /* SwiftLesson1Page3.swift */; };
-		031B64D42074769500D3A0EA /* PebblesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B32074769400D3A0EA /* PebblesProgram.swift */; };
-		031B64D52074769500D3A0EA /* DripProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B42074769400D3A0EA /* DripProgram.swift */; };
-		031B64D62074769500D3A0EA /* GravelProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B52074769400D3A0EA /* GravelProgram.swift */; };
+		031B64D42074769500D3A0EA /* Pebbles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B32074769400D3A0EA /* Pebbles.swift */; };
+		031B64D52074769500D3A0EA /* TheDrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B42074769400D3A0EA /* TheDrip.swift */; };
+		031B64D62074769500D3A0EA /* Gravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B52074769400D3A0EA /* Gravel.swift */; };
 		031B64D72074769500D3A0EA /* SwiftLesson1Page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B62074769400D3A0EA /* SwiftLesson1Page2.swift */; };
 		031B64E32074769500D3A0EA /* Whirlwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C32074769400D3A0EA /* Whirlwind.swift */; };
-		031B64E42074769500D3A0EA /* RectanglesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C42074769400D3A0EA /* RectanglesProgram.swift */; };
-		031B64E52074769500D3A0EA /* RainingHeartsProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C52074769400D3A0EA /* RainingHeartsProgram.swift */; };
+		031B64E42074769500D3A0EA /* Rectangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C42074769400D3A0EA /* Rectangles.swift */; };
+		031B64E52074769500D3A0EA /* RainingHearts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C52074769400D3A0EA /* RainingHearts.swift */; };
 		031B64E62074769500D3A0EA /* SwiftLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C62074769400D3A0EA /* SwiftLesson.swift */; };
-		031B64E72074769500D3A0EA /* SargonChessboardProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C72074769400D3A0EA /* SargonChessboardProgram.swift */; };
-		031B64E82074769500D3A0EA /* BallProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C82074769400D3A0EA /* BallProgram.swift */; };
-		031B64E92074769500D3A0EA /* SparklerProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C92074769400D3A0EA /* SparklerProgram.swift */; };
-		031B64EA2074769500D3A0EA /* HelloPixelProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CA2074769500D3A0EA /* HelloPixelProgram.swift */; };
-		031B64EB2074769500D3A0EA /* MoveProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CB2074769500D3A0EA /* MoveProgram.swift */; };
-		031B64EC2074769500D3A0EA /* MushroomProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CC2074769500D3A0EA /* MushroomProgram.swift */; };
+		031B64E72074769500D3A0EA /* SargonChessboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C72074769400D3A0EA /* SargonChessboard.swift */; };
+		031B64E82074769500D3A0EA /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C82074769400D3A0EA /* Ball.swift */; };
+		031B64E92074769500D3A0EA /* Sparkler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C92074769400D3A0EA /* Sparkler.swift */; };
+		031B64EA2074769500D3A0EA /* HelloPixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CA2074769500D3A0EA /* HelloPixel.swift */; };
+		031B64EB2074769500D3A0EA /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CB2074769500D3A0EA /* Move.swift */; };
+		031B64EC2074769500D3A0EA /* Mushroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CC2074769500D3A0EA /* Mushroom.swift */; };
 		031B64ED2074769500D3A0EA /* EmptyProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CD2074769500D3A0EA /* EmptyProgram.swift */; };
-		031B64EE2074769500D3A0EA /* DotsAndLinesProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CE2074769500D3A0EA /* DotsAndLinesProgram.swift */; };
+		031B64EE2074769500D3A0EA /* DotsAndLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CE2074769500D3A0EA /* DotsAndLines.swift */; };
 		031B64EF2074769500D3A0EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031B64CF2074769500D3A0EA /* Images.xcassets */; };
 		031B64F02074769500D3A0EA /* ProgramSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64D02074769500D3A0EA /* ProgramSelector.swift */; };
 		031B64F22074771A00D3A0EA /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64F12074771A00D3A0EA /* AppViewController.swift */; };
+		03B9E14920747F7600814E29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9E14820747F7600814E29 /* AppDelegate.swift */; };
+		03B9E14B20747F7600814E29 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9E14A20747F7600814E29 /* AppViewController.swift */; };
+		03B9E14D20747F7600814E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B9E14C20747F7600814E29 /* Assets.xcassets */; };
+		03B9E15020747F7600814E29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B9E14E20747F7600814E29 /* Main.storyboard */; };
 		4E26EB06A5364558931BDAD1 /* Pods_Lores_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9C0B78A5AAD424A97DB5E8 /* Pods_Lores_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		9E87A785C130E453818DBF89 /* Pods_Lores_Example_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0F0785ADB9DDEC1124B829 /* Pods_Lores_Example_macOS.framework */; };
 		D20254515DD01342C6C99319 /* Pods_Lores_Example_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 826F5C28004F02A9735E1843 /* Pods_Lores_Example_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		031B64B02074769400D3A0EA /* MandalaProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MandalaProgram.swift; sourceTree = "<group>"; };
+		031B64B02074769400D3A0EA /* Mandala.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mandala.swift; sourceTree = "<group>"; };
 		031B64B12074769400D3A0EA /* SwiftLesson1Page1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLesson1Page1.swift; sourceTree = "<group>"; };
 		031B64B22074769400D3A0EA /* SwiftLesson1Page3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLesson1Page3.swift; sourceTree = "<group>"; };
-		031B64B32074769400D3A0EA /* PebblesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PebblesProgram.swift; sourceTree = "<group>"; };
-		031B64B42074769400D3A0EA /* DripProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DripProgram.swift; sourceTree = "<group>"; };
-		031B64B52074769400D3A0EA /* GravelProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GravelProgram.swift; sourceTree = "<group>"; };
+		031B64B32074769400D3A0EA /* Pebbles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pebbles.swift; sourceTree = "<group>"; };
+		031B64B42074769400D3A0EA /* TheDrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheDrip.swift; sourceTree = "<group>"; };
+		031B64B52074769400D3A0EA /* Gravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gravel.swift; sourceTree = "<group>"; };
 		031B64B62074769400D3A0EA /* SwiftLesson1Page2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLesson1Page2.swift; sourceTree = "<group>"; };
 		031B64B82074769400D3A0EA /* Xxx.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Xxx.java; sourceTree = "<group>"; };
 		031B64B92074769400D3A0EA /* Sierpinski.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Sierpinski.java; sourceTree = "<group>"; };
@@ -57,24 +83,32 @@
 		031B64C12074769400D3A0EA /* InputTest.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = InputTest.java; sourceTree = "<group>"; };
 		031B64C22074769400D3A0EA /* TicTacToe.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = TicTacToe.java; sourceTree = "<group>"; };
 		031B64C32074769400D3A0EA /* Whirlwind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Whirlwind.swift; sourceTree = "<group>"; };
-		031B64C42074769400D3A0EA /* RectanglesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectanglesProgram.swift; sourceTree = "<group>"; };
-		031B64C52074769400D3A0EA /* RainingHeartsProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainingHeartsProgram.swift; sourceTree = "<group>"; };
+		031B64C42074769400D3A0EA /* Rectangles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rectangles.swift; sourceTree = "<group>"; };
+		031B64C52074769400D3A0EA /* RainingHearts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainingHearts.swift; sourceTree = "<group>"; };
 		031B64C62074769400D3A0EA /* SwiftLesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLesson.swift; sourceTree = "<group>"; };
-		031B64C72074769400D3A0EA /* SargonChessboardProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SargonChessboardProgram.swift; sourceTree = "<group>"; };
-		031B64C82074769400D3A0EA /* BallProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallProgram.swift; sourceTree = "<group>"; };
-		031B64C92074769400D3A0EA /* SparklerProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparklerProgram.swift; sourceTree = "<group>"; };
-		031B64CA2074769500D3A0EA /* HelloPixelProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloPixelProgram.swift; sourceTree = "<group>"; };
-		031B64CB2074769500D3A0EA /* MoveProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveProgram.swift; sourceTree = "<group>"; };
-		031B64CC2074769500D3A0EA /* MushroomProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MushroomProgram.swift; sourceTree = "<group>"; };
+		031B64C72074769400D3A0EA /* SargonChessboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SargonChessboard.swift; sourceTree = "<group>"; };
+		031B64C82074769400D3A0EA /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
+		031B64C92074769400D3A0EA /* Sparkler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sparkler.swift; sourceTree = "<group>"; };
+		031B64CA2074769500D3A0EA /* HelloPixel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloPixel.swift; sourceTree = "<group>"; };
+		031B64CB2074769500D3A0EA /* Move.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		031B64CC2074769500D3A0EA /* Mushroom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mushroom.swift; sourceTree = "<group>"; };
 		031B64CD2074769500D3A0EA /* EmptyProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyProgram.swift; sourceTree = "<group>"; };
-		031B64CE2074769500D3A0EA /* DotsAndLinesProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotsAndLinesProgram.swift; sourceTree = "<group>"; };
+		031B64CE2074769500D3A0EA /* DotsAndLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotsAndLines.swift; sourceTree = "<group>"; };
 		031B64CF2074769500D3A0EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		031B64D02074769500D3A0EA /* ProgramSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramSelector.swift; sourceTree = "<group>"; };
 		031B64F12074771A00D3A0EA /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		03B9E14620747F7500814E29 /* Lores_Example_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lores_Example_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03B9E14820747F7600814E29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03B9E14A20747F7600814E29 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		03B9E14C20747F7600814E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03B9E14F20747F7600814E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03B9E15120747F7600814E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03B9E15220747F7600814E29 /* Lores_Example_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lores_Example_macOS.entitlements; sourceTree = "<group>"; };
 		0BB6803F0D4F83A7388EF056 /* Pods-Lores_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Tests/Pods-Lores_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1F6CF84F3DFBCBE798A9E005 /* Pods-Lores_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example/Pods-Lores_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		226A7BB41539BDCBC35A012F /* Pods-Lores_Example_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example_iOS/Pods-Lores_Example_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		320D7AD53E73B249C130CD38 /* Pods-Lores_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Tests/Pods-Lores_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A0F0785ADB9DDEC1124B829 /* Pods_Lores_Example_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lores_Example_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D3AC8E5E149E7BB86C32BD /* Pods_Lores_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lores_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DDDF796C9EBE854619ECD59 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Lores_Example_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lores_Example_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,15 +117,25 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		65A9E91FF8847C8878400AEA /* Pods-Lores_Example_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example_macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example_macOS/Pods-Lores_Example_macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		826F5C28004F02A9735E1843 /* Pods_Lores_Example_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lores_Example_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9C0B78A5AAD424A97DB5E8 /* Pods_Lores_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lores_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD30E5964A948C6AF65E50E4 /* Pods-Lores_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example/Pods-Lores_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D7B960E82E747CB1921A3F17 /* Pods-Lores_Example_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example_macOS/Pods-Lores_Example_macOS.release.xcconfig"; sourceTree = "<group>"; };
 		DC9B7E6352F80DF69129F48C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E1D257339FC1AC72B8E359B1 /* Lores.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Lores.podspec; path = ../Lores.podspec; sourceTree = "<group>"; };
 		E8EDAFA815E38B9BE51E7F58 /* Pods-Lores_Example_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example_iOS/Pods-Lores_Example_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		03B9E14320747F7500814E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E87A785C130E453818DBF89 /* Pods_Lores_Example_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,26 +161,26 @@
 		031B64AF2074769400D3A0EA /* Programs */ = {
 			isa = PBXGroup;
 			children = (
-				031B64B02074769400D3A0EA /* MandalaProgram.swift */,
+				031B64B72074769400D3A0EA /* Java */,
+				031B64B02074769400D3A0EA /* Mandala.swift */,
+				031B64CA2074769500D3A0EA /* HelloPixel.swift */,
 				031B64B12074769400D3A0EA /* SwiftLesson1Page1.swift */,
 				031B64B22074769400D3A0EA /* SwiftLesson1Page3.swift */,
-				031B64B32074769400D3A0EA /* PebblesProgram.swift */,
-				031B64B42074769400D3A0EA /* DripProgram.swift */,
-				031B64B52074769400D3A0EA /* GravelProgram.swift */,
+				031B64B32074769400D3A0EA /* Pebbles.swift */,
+				031B64B42074769400D3A0EA /* TheDrip.swift */,
+				031B64B52074769400D3A0EA /* Gravel.swift */,
 				031B64B62074769400D3A0EA /* SwiftLesson1Page2.swift */,
-				031B64B72074769400D3A0EA /* Java */,
 				031B64C32074769400D3A0EA /* Whirlwind.swift */,
-				031B64C42074769400D3A0EA /* RectanglesProgram.swift */,
-				031B64C52074769400D3A0EA /* RainingHeartsProgram.swift */,
+				031B64C42074769400D3A0EA /* Rectangles.swift */,
+				031B64C52074769400D3A0EA /* RainingHearts.swift */,
 				031B64C62074769400D3A0EA /* SwiftLesson.swift */,
-				031B64C72074769400D3A0EA /* SargonChessboardProgram.swift */,
-				031B64C82074769400D3A0EA /* BallProgram.swift */,
-				031B64C92074769400D3A0EA /* SparklerProgram.swift */,
-				031B64CA2074769500D3A0EA /* HelloPixelProgram.swift */,
-				031B64CB2074769500D3A0EA /* MoveProgram.swift */,
-				031B64CC2074769500D3A0EA /* MushroomProgram.swift */,
+				031B64C72074769400D3A0EA /* SargonChessboard.swift */,
+				031B64C82074769400D3A0EA /* Ball.swift */,
+				031B64C92074769400D3A0EA /* Sparkler.swift */,
+				031B64CB2074769500D3A0EA /* Move.swift */,
+				031B64CC2074769500D3A0EA /* Mushroom.swift */,
 				031B64CD2074769500D3A0EA /* EmptyProgram.swift */,
-				031B64CE2074769500D3A0EA /* DotsAndLinesProgram.swift */,
+				031B64CE2074769500D3A0EA /* DotsAndLines.swift */,
 			);
 			path = Programs;
 			sourceTree = "<group>";
@@ -159,6 +203,19 @@
 			path = Java;
 			sourceTree = "<group>";
 		};
+		03B9E14720747F7500814E29 /* Lores_Example_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				03B9E14820747F7600814E29 /* AppDelegate.swift */,
+				03B9E14A20747F7600814E29 /* AppViewController.swift */,
+				03B9E14C20747F7600814E29 /* Assets.xcassets */,
+				03B9E14E20747F7600814E29 /* Main.storyboard */,
+				03B9E15120747F7600814E29 /* Info.plist */,
+				03B9E15220747F7600814E29 /* Lores_Example_macOS.entitlements */,
+			);
+			path = Lores_Example_macOS;
+			sourceTree = "<group>";
+		};
 		24F1DB08527B555095835238 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +225,8 @@
 				0BB6803F0D4F83A7388EF056 /* Pods-Lores_Tests.release.xcconfig */,
 				E8EDAFA815E38B9BE51E7F58 /* Pods-Lores_Example_iOS.debug.xcconfig */,
 				226A7BB41539BDCBC35A012F /* Pods-Lores_Example_iOS.release.xcconfig */,
+				65A9E91FF8847C8878400AEA /* Pods-Lores_Example_macOS.debug.xcconfig */,
+				D7B960E82E747CB1921A3F17 /* Pods-Lores_Example_macOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -178,6 +237,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				031B64AE2074769400D3A0EA /* Lores-Shared */,
 				607FACD21AFB9204008FA782 /* Lores-iOS */,
+				03B9E14720747F7500814E29 /* Lores_Example_macOS */,
 				607FACD11AFB9204008FA782 /* Products */,
 				24F1DB08527B555095835238 /* Pods */,
 				C23ACA895566B974D6E5E7FA /* Frameworks */,
@@ -188,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* Lores_Example_iOS.app */,
+				03B9E14620747F7500814E29 /* Lores_Example_macOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,6 +290,7 @@
 				AA9C0B78A5AAD424A97DB5E8 /* Pods_Lores_Example.framework */,
 				41D3AC8E5E149E7BB86C32BD /* Pods_Lores_Tests.framework */,
 				826F5C28004F02A9735E1843 /* Pods_Lores_Example_iOS.framework */,
+				3A0F0785ADB9DDEC1124B829 /* Pods_Lores_Example_macOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -236,6 +298,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		03B9E14520747F7500814E29 /* Lores_Example_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03B9E15520747F7600814E29 /* Build configuration list for PBXNativeTarget "Lores_Example_macOS" */;
+			buildPhases = (
+				FB1A047849EB630AAC7012D2 /* [CP] Check Pods Manifest.lock */,
+				03B9E14220747F7500814E29 /* Sources */,
+				03B9E14320747F7500814E29 /* Frameworks */,
+				03B9E14420747F7500814E29 /* Resources */,
+				D45F1CA659806054FBD64882 /* [CP] Embed Pods Frameworks */,
+				5AC67B2A3A12052A6F1612C3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lores_Example_macOS;
+			productName = Lores_Example_macOS;
+			productReference = 03B9E14620747F7500814E29 /* Lores_Example_macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		607FACCF1AFB9204008FA782 /* Lores_Example_iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Lores_Example_iOS" */;
@@ -262,10 +344,14 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					03B9E14520747F7500814E29 = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -286,11 +372,22 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* Lores_Example_iOS */,
+				03B9E14520747F7500814E29 /* Lores_Example_macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		03B9E14420747F7500814E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030ADD6D2074920400AA6FF0 /* Images.xcassets in Resources */,
+				03B9E14D20747F7600814E29 /* Assets.xcassets in Resources */,
+				03B9E15020747F7600814E29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,9 +409,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Lores_Example_iOS/Pods-Lores_Example_iOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CommonCryptoModule/CommonCryptoModule.framework",
-				"${BUILT_PRODUCTS_DIR}/Lores/Lores.framework",
-				"${BUILT_PRODUCTS_DIR}/WolfCore/WolfCore.framework",
+				"${BUILT_PRODUCTS_DIR}/CommonCryptoModule-iOS/CommonCryptoModule.framework",
+				"${BUILT_PRODUCTS_DIR}/Lores-iOS/Lores.framework",
+				"${BUILT_PRODUCTS_DIR}/WolfCore-iOS/WolfCore.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -325,6 +422,43 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lores_Example_iOS/Pods-Lores_Example_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AC67B2A3A12052A6F1612C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lores_Example_macOS/Pods-Lores_Example_macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D45F1CA659806054FBD64882 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Lores_Example_macOS/Pods-Lores_Example_macOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CommonCryptoModule-macOS/CommonCryptoModule.framework",
+				"${BUILT_PRODUCTS_DIR}/Lores-macOS/Lores.framework",
+				"${BUILT_PRODUCTS_DIR}/WolfCore-macOS/WolfCore.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CommonCryptoModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lores.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WolfCore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lores_Example_macOS/Pods-Lores_Example_macOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E25D9E5A8A04F0BD593F9DCF /* [CP] Check Pods Manifest.lock */ = {
@@ -360,41 +494,96 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lores_Example_iOS/Pods-Lores_Example_iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FB1A047849EB630AAC7012D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lores_Example_macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		03B9E14220747F7500814E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030ADD68207491DE00AA6FF0 /* HelloPixel.swift in Sources */,
+				03B9E14B20747F7600814E29 /* AppViewController.swift in Sources */,
+				030ADD64207491DE00AA6FF0 /* SwiftLesson.swift in Sources */,
+				030ADD65207491DE00AA6FF0 /* SargonChessboard.swift in Sources */,
+				030ADD5D207491DE00AA6FF0 /* Pebbles.swift in Sources */,
+				030ADD61207491DE00AA6FF0 /* Whirlwind.swift in Sources */,
+				030ADD5F207491DE00AA6FF0 /* Gravel.swift in Sources */,
+				030ADD5A207491DE00AA6FF0 /* Mandala.swift in Sources */,
+				030ADD69207491DE00AA6FF0 /* Move.swift in Sources */,
+				030ADD5E207491DE00AA6FF0 /* TheDrip.swift in Sources */,
+				030ADD6A207491DE00AA6FF0 /* Mushroom.swift in Sources */,
+				030ADD67207491DE00AA6FF0 /* Sparkler.swift in Sources */,
+				030ADD62207491DE00AA6FF0 /* Rectangles.swift in Sources */,
+				030ADD6B207491DE00AA6FF0 /* EmptyProgram.swift in Sources */,
+				030ADD5C207491DE00AA6FF0 /* SwiftLesson1Page3.swift in Sources */,
+				030ADD59207491CF00AA6FF0 /* ProgramSelector.swift in Sources */,
+				03B9E14920747F7600814E29 /* AppDelegate.swift in Sources */,
+				030ADD63207491DE00AA6FF0 /* RainingHearts.swift in Sources */,
+				030ADD6C207491DE00AA6FF0 /* DotsAndLines.swift in Sources */,
+				030ADD5B207491DE00AA6FF0 /* SwiftLesson1Page1.swift in Sources */,
+				030ADD60207491DE00AA6FF0 /* SwiftLesson1Page2.swift in Sources */,
+				030ADD66207491DE00AA6FF0 /* Ball.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				031B64E42074769500D3A0EA /* RectanglesProgram.swift in Sources */,
-				031B64E72074769500D3A0EA /* SargonChessboardProgram.swift in Sources */,
-				031B64E82074769500D3A0EA /* BallProgram.swift in Sources */,
-				031B64D42074769500D3A0EA /* PebblesProgram.swift in Sources */,
+				031B64E42074769500D3A0EA /* Rectangles.swift in Sources */,
+				031B64E72074769500D3A0EA /* SargonChessboard.swift in Sources */,
+				031B64E82074769500D3A0EA /* Ball.swift in Sources */,
+				031B64D42074769500D3A0EA /* Pebbles.swift in Sources */,
 				031B64F22074771A00D3A0EA /* AppViewController.swift in Sources */,
-				031B64D12074769500D3A0EA /* MandalaProgram.swift in Sources */,
-				031B64EA2074769500D3A0EA /* HelloPixelProgram.swift in Sources */,
-				031B64EC2074769500D3A0EA /* MushroomProgram.swift in Sources */,
+				031B64D12074769500D3A0EA /* Mandala.swift in Sources */,
+				031B64EA2074769500D3A0EA /* HelloPixel.swift in Sources */,
+				031B64EC2074769500D3A0EA /* Mushroom.swift in Sources */,
 				031B64D22074769500D3A0EA /* SwiftLesson1Page1.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				031B64E92074769500D3A0EA /* SparklerProgram.swift in Sources */,
+				031B64E92074769500D3A0EA /* Sparkler.swift in Sources */,
 				031B64E62074769500D3A0EA /* SwiftLesson.swift in Sources */,
-				031B64EE2074769500D3A0EA /* DotsAndLinesProgram.swift in Sources */,
+				031B64EE2074769500D3A0EA /* DotsAndLines.swift in Sources */,
 				031B64D32074769500D3A0EA /* SwiftLesson1Page3.swift in Sources */,
-				031B64D52074769500D3A0EA /* DripProgram.swift in Sources */,
+				031B64D52074769500D3A0EA /* TheDrip.swift in Sources */,
 				031B64ED2074769500D3A0EA /* EmptyProgram.swift in Sources */,
-				031B64EB2074769500D3A0EA /* MoveProgram.swift in Sources */,
+				031B64EB2074769500D3A0EA /* Move.swift in Sources */,
 				031B64E32074769500D3A0EA /* Whirlwind.swift in Sources */,
-				031B64E52074769500D3A0EA /* RainingHeartsProgram.swift in Sources */,
+				031B64E52074769500D3A0EA /* RainingHearts.swift in Sources */,
 				031B64D72074769500D3A0EA /* SwiftLesson1Page2.swift in Sources */,
 				031B64F02074769500D3A0EA /* ProgramSelector.swift in Sources */,
-				031B64D62074769500D3A0EA /* GravelProgram.swift in Sources */,
+				031B64D62074769500D3A0EA /* Gravel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		03B9E14E20747F7600814E29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03B9E14F20747F7600814E29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -414,6 +603,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		03B9E15320747F7600814E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65A9E91FF8847C8878400AEA /* Pods-Lores_Example_macOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Lores_Example_macOS/Lores_Example_macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Lores_Example_macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arciem.Lores-Example-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		03B9E15420747F7600814E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B960E82E747CB1921A3F17 /* Pods-Lores_Example_macOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Lores_Example_macOS/Lores_Example_macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Lores_Example_macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arciem.Lores-Example-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -554,6 +797,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		03B9E15520747F7600814E29 /* Build configuration list for PBXNativeTarget "Lores_Example_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03B9E15320747F7600814E29 /* Debug */,
+				03B9E15420747F7600814E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "Lores" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

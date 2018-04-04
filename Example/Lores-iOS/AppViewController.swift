@@ -10,9 +10,7 @@ import WolfCore
 import Lores
 
 class AppViewController: ViewController {
-
-    private lazy var programView: ProgramView = .init() • { 🍒 in
-    }
+    private lazy var programView = ProgramView()
 
     override var prefersStatusBarHidden : Bool {
         return true
@@ -29,8 +27,8 @@ class AppViewController: ViewController {
             programView
         ]
 
-        programView.backgroundImage = UIImage(named: "scanlines")!
-        programView.backgroundTintColor = UIColor.white.darkened(by: 0.9)
+        programView.backgroundImage = OSImage(named: "scanlines")!
+        programView.backgroundTintColor = OSColor.white.darkened(by: 0.9)
         
         programView.constrainFrameToFrame()
         programView.program = program

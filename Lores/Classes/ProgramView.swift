@@ -21,21 +21,18 @@ public class ProgramView: View {
 
     private var backgroundView: BackgroundView!
 
-    public var backgroundImage: UIImage? {
+    public var backgroundImage: OSImage? {
         get { return backgroundView.image }
         set { backgroundView.image = newValue }
     }
 
-    public var backgroundTintColor: UIColor? {
-        get { return backgroundView.tintColor }
-        set { backgroundView.tintColor = newValue }
+    public var backgroundTintColor: OSColor? {
+        get { return backgroundView.backgroundTintColor }
+        set { backgroundView.backgroundTintColor = newValue }
     }
 
     override public func setup() {
         super.setup()
-
-        layer.magnificationFilter = kCAFilterNearest
-
         addBackgroundView()
         addCanvasView()
     }

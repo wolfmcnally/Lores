@@ -5,3 +5,9 @@ target 'Lores_Example_iOS' do
   pod 'Lores', :path => '../'
   pod 'WolfCore', :path => '../../WolfCore/'
 end
+
+target 'Lores_Example_macOS' do
+    platform :macos, '10.13'
+    pod 'Lores', :path => '../'
+    pod 'WolfCore', :path => '../../WolfCore/'
+end

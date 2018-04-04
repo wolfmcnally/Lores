@@ -33,6 +33,10 @@ public struct Size {
     public var bounds: Rect {
         return Rect(origin: .zero, size: self)
     }
+
+    public var aspect: CGFloat {
+        return CGFloat(width) / CGFloat(height)
+    }
 }
 
 extension Size: CustomStringConvertible {

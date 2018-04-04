@@ -7,21 +7,13 @@
 
 import WolfCore
 
-class CanvasImageView: ImageView {
-    override func setup() {
-        super.setup()
-        layer.magnificationFilter = kCAFilterNearest
-        contentMode = .scaleAspectFit
-    }
-}
-
 class CanvasView : View {
     var touchBegan: ((_ point: CGPoint) -> Void)?
     var touchMoved: ((_ point: CGPoint) -> Void)?
     var touchEnded: ((_ point: CGPoint) -> Void)?
     var touchCancelled: ((_ point: CGPoint) -> Void)?
 
-    var layerViews = [ImageView]()
+    var layerViews = [CanvasLayerView]()
     var screenSpec: ScreenSpec! {
         didSet {
             syncToScreen()
@@ -32,17 +24,19 @@ class CanvasView : View {
         removeAllSubviews()
         layerViews.removeAll()
         screenSpec.layerSpecs.forEach { spec in
-            let view = CanvasImageView()
+            let view = CanvasLayerView()
             addSubview(view)
-            view.constrainFrameToFrame()
+            view.constrainCenterToCenter()
+            view.constrainWidthToWidth(priority: .defaultLow)
+            view.constrainHeightToHeight(priority: .defaultLow)
+            view.constrainMaxHeightToHeight()
+            view.constrainMaxWidthToWidth()
+            view.constrainAspect(to: screenSpec.canvasSize.aspect)
             layerViews.append(view)
         }
     }
 
-    override func setup() {
-        super.setup()
-    }
-
+    #if !os(macOS)
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
         let loc = touch.location(in: self)
@@ -66,4 +60,5 @@ class CanvasView : View {
         let loc = touch.location(in: self)
         touchCancelled?(loc)
     }
+    #endif
 }

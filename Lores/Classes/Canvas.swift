@@ -101,7 +101,13 @@ public class Canvas {
                 error = vImagePremultiplyData_ARGB8888(&argb8, &argb8Premultiplied, UInt32(kvImageNoFlags))
                 assert(error == kvImageNoError, "Error when premultiplying canvas")
                 let cgImage = self.context.makeImage()
+                #if os(macOS)
+                let boundsSize = self.bounds.size
+                let size = CGSize(width: CGFloat(boundsSize.width), height: CGFloat(boundsSize.height))
+                self._image = NSImage(cgImage: cgImage!, size: size)
+                #else
                 self._image = UIImage(cgImage: cgImage!)
+                #endif
                 assert(self._image != nil, "Error when converting")
             }
             return self._image!
