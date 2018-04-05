@@ -149,8 +149,18 @@ open class Program {
     open func update() { }
     open func draw() { }
 
-    open func touchBeganAtPoint(_ point: Point) { }
-    open func touchMovedAtPoint(_ point: Point) { }
-    open func touchEndedAtPoint(_ point: Point) { }
-    open func touchCancelledAtPoint(_ point: Point) { }
+    // macOS
+    open func mouseDown(at point: Point) { }
+    open func mouseDragged(at point: Point) { }
+    open func mouseUp(at point: Point) { }
+
+    open func mouseEntered(at point: Point) { }
+    open func mouseMoved(at point: Point) { }
+    open func mouseExited(at point: Point) { }
+
+    // iOS
+    open func touchBegan(at point: Point) { }
+    open func touchMoved(at point: Point) { }
+    open func touchEnded(at point: Point) { }
+    open func touchCancelled(at point: Point) { }
 }

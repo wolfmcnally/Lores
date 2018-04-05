@@ -56,21 +56,43 @@ public class ProgramView: View {
         addSubview(canvasView)
         canvasView.constrainFrameToFrame()
 
+        #if os(macOS)
+
+        canvasView.mouseDown = { [unowned self] point in
+            self.program.mouseDown(at: self.canvasPointForCanvasViewPoint(point))
+        }
+
+        canvasView.mouseDragged = { [unowned self] point in
+            self.program.mouseDragged(at: self.canvasPointForCanvasViewPoint(point))
+        }
+
+        canvasView.mouseUp = { [unowned self] point in
+            self.program.mouseUp(at: self.canvasPointForCanvasViewPoint(point))
+        }
+
+        canvasView.mouseMoved = { [unowned self] point in
+            self.program.mouseMoved(at: self.canvasPointForCanvasViewPoint(point))
+        }
+
+        #else
+
         canvasView.touchBegan = { [unowned self] point in
-            self.program.touchBeganAtPoint(self.canvasPointForCanvasViewPoint(point))
+            self.program.touchBegan(at: self.canvasPointForCanvasViewPoint(point))
         }
 
         canvasView.touchMoved = { [unowned self] point in
-            self.program.touchMovedAtPoint(self.canvasPointForCanvasViewPoint(point))
+            self.program.touchMoved(at: self.canvasPointForCanvasViewPoint(point))
         }
 
         canvasView.touchEnded = { [unowned self] point in
-            self.program.touchEndedAtPoint(self.canvasPointForCanvasViewPoint(point))
+            self.program.touchEnded(at: self.canvasPointForCanvasViewPoint(point))
         }
 
         canvasView.touchCancelled = { [unowned self] point in
-            self.program.touchCancelledAtPoint(self.canvasPointForCanvasViewPoint(point))
+            self.program.touchCancelled(at: self.canvasPointForCanvasViewPoint(point))
         }
+
+        #endif
     }
 
     public func flush() {

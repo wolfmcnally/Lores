@@ -15,7 +15,7 @@ class WhirlwindProgram: Program {
     private var center = DPoint.zero
 
     override func setup() {
-        framesPerSecond = 60
+        framesPerSecond = 30
         canvasSize = Size(width: 100, height: 150)
         backgroundCanvas.clearColor = .clear
         center = canvas.bounds.mid.dpoint

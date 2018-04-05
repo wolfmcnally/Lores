@@ -56,12 +56,21 @@ class SparklerProgram: Program {
         }
     }
 
-    override func touchBeganAtPoint(_ point: Point) {
+    override func touchBegan(at point: Point) {
         genPosition = canvas.clampPoint(point).dpoint
         genHue = Random.number()
     }
 
-    override func touchMovedAtPoint(_ point: Point) {
+    override func touchMoved(at point: Point) {
+        genPosition = canvas.clampPoint(point).dpoint
+    }
+
+    override func mouseDown(at point: Point) {
+        genPosition = canvas.clampPoint(point).dpoint
+        genHue = Random.number()
+    }
+
+    override func mouseDragged(at point: Point) {
         genPosition = canvas.clampPoint(point).dpoint
     }
 
