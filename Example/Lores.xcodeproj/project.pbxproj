@@ -54,13 +54,41 @@
 		03B9E14B20747F7600814E29 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9E14A20747F7600814E29 /* AppViewController.swift */; };
 		03B9E14D20747F7600814E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B9E14C20747F7600814E29 /* Assets.xcassets */; };
 		03B9E15020747F7600814E29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B9E14E20747F7600814E29 /* Main.storyboard */; };
-		4E26EB06A5364558931BDAD1 /* Pods_Lores_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9C0B78A5AAD424A97DB5E8 /* Pods_Lores_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		9E87A785C130E453818DBF89 /* Pods_Lores_Example_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0F0785ADB9DDEC1124B829 /* Pods_Lores_Example_macOS.framework */; };
-		D20254515DD01342C6C99319 /* Pods_Lores_Example_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 826F5C28004F02A9735E1843 /* Pods_Lores_Example_iOS.framework */; };
+		79119C73207852E8009098FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79119C72207852E8009098FD /* AppDelegate.swift */; };
+		79119C75207852E8009098FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79119C74207852E8009098FD /* ViewController.swift */; };
+		79119C78207852E8009098FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79119C76207852E8009098FD /* Main.storyboard */; };
+		79119C7A207852EA009098FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79119C79207852EA009098FD /* Assets.xcassets */; };
+		79119C7F207863DC009098FD /* ProgramSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64D02074769500D3A0EA /* ProgramSelector.swift */; };
+		79119C80207863E5009098FD /* Mandala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B02074769400D3A0EA /* Mandala.swift */; };
+		79119C81207863E5009098FD /* HelloPixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CA2074769500D3A0EA /* HelloPixel.swift */; };
+		79119C82207863E5009098FD /* SwiftLesson1Page1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B12074769400D3A0EA /* SwiftLesson1Page1.swift */; };
+		79119C83207863E5009098FD /* SwiftLesson1Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B22074769400D3A0EA /* SwiftLesson1Page3.swift */; };
+		79119C84207863E5009098FD /* Pebbles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B32074769400D3A0EA /* Pebbles.swift */; };
+		79119C85207863E5009098FD /* TheDrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B42074769400D3A0EA /* TheDrip.swift */; };
+		79119C86207863E5009098FD /* Gravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B52074769400D3A0EA /* Gravel.swift */; };
+		79119C87207863E5009098FD /* SwiftLesson1Page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64B62074769400D3A0EA /* SwiftLesson1Page2.swift */; };
+		79119C88207863E5009098FD /* Whirlwind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C32074769400D3A0EA /* Whirlwind.swift */; };
+		79119C89207863E5009098FD /* Rectangles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C42074769400D3A0EA /* Rectangles.swift */; };
+		79119C8A207863E5009098FD /* RainingHearts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C52074769400D3A0EA /* RainingHearts.swift */; };
+		79119C8B207863E5009098FD /* SwiftLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C62074769400D3A0EA /* SwiftLesson.swift */; };
+		79119C8C207863E5009098FD /* SargonChessboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C72074769400D3A0EA /* SargonChessboard.swift */; };
+		79119C8D207863E5009098FD /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C82074769400D3A0EA /* Ball.swift */; };
+		79119C8E207863E5009098FD /* Sparkler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64C92074769400D3A0EA /* Sparkler.swift */; };
+		79119C8F207863E5009098FD /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CB2074769500D3A0EA /* Move.swift */; };
+		79119C90207863E5009098FD /* Mushroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CC2074769500D3A0EA /* Mushroom.swift */; };
+		79119C91207863E5009098FD /* EmptyProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CD2074769500D3A0EA /* EmptyProgram.swift */; };
+		79119C92207863E5009098FD /* DotsAndLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031B64CE2074769500D3A0EA /* DotsAndLines.swift */; };
+		79119C9320786469009098FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031B64CF2074769500D3A0EA /* Images.xcassets */; };
+		79119C9520794A89009098FD /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79119C9420794A89009098FD /* Snake.swift */; };
+		79119C9620794A89009098FD /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79119C9420794A89009098FD /* Snake.swift */; };
+		79119C9720794A89009098FD /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79119C9420794A89009098FD /* Snake.swift */; };
+		7DA8205058801BF3B94FD879 /* Pods_Lores_Example_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6814133D7ACE7467F424443 /* Pods_Lores_Example_iOS.framework */; };
+		86B05F7E43725A9CDC8AB3D7 /* Pods_Lores_Example_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACFDFC72D56334384CA4DDE /* Pods_Lores_Example_macOS.framework */; };
+		EE4857C16007A701B52AEF57 /* Pods_Lores_Example_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7185D45DBD155524BA9645CD /* Pods_Lores_Example_tvOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,12 +132,7 @@
 		03B9E14F20747F7600814E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03B9E15120747F7600814E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03B9E15220747F7600814E29 /* Lores_Example_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lores_Example_macOS.entitlements; sourceTree = "<group>"; };
-		0BB6803F0D4F83A7388EF056 /* Pods-Lores_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Tests/Pods-Lores_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1F6CF84F3DFBCBE798A9E005 /* Pods-Lores_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example/Pods-Lores_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		226A7BB41539BDCBC35A012F /* Pods-Lores_Example_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example_iOS/Pods-Lores_Example_iOS.release.xcconfig"; sourceTree = "<group>"; };
-		320D7AD53E73B249C130CD38 /* Pods-Lores_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Tests/Pods-Lores_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3A0F0785ADB9DDEC1124B829 /* Pods_Lores_Example_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lores_Example_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41D3AC8E5E149E7BB86C32BD /* Pods_Lores_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lores_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		488312164FB9DDD5BA9CA7C7 /* Pods-Lores_Example_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example_tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example_tvOS/Pods-Lores_Example_tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		4DDDF796C9EBE854619ECD59 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Lores_Example_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lores_Example_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,14 +140,23 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		65A9E91FF8847C8878400AEA /* Pods-Lores_Example_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example_macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example_macOS/Pods-Lores_Example_macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		826F5C28004F02A9735E1843 /* Pods_Lores_Example_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lores_Example_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA9C0B78A5AAD424A97DB5E8 /* Pods_Lores_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lores_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD30E5964A948C6AF65E50E4 /* Pods-Lores_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example/Pods-Lores_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D7B960E82E747CB1921A3F17 /* Pods-Lores_Example_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example_macOS/Pods-Lores_Example_macOS.release.xcconfig"; sourceTree = "<group>"; };
+		63F03C4FB44CDCA15B8F2BF1 /* Pods-Lores_Example_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example_tvOS/Pods-Lores_Example_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7185D45DBD155524BA9645CD /* Pods_Lores_Example_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lores_Example_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		747AAADB331710BD15F39CCE /* Pods-Lores_Example_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example_macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example_macOS/Pods-Lores_Example_macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		79119C70207852E8009098FD /* Lores_Example_tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lores_Example_tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79119C72207852E8009098FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79119C74207852E8009098FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79119C77207852E8009098FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79119C79207852EA009098FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79119C7B207852EA009098FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79119C9420794A89009098FD /* Snake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		C4BD0526FF2F83115F10FBC4 /* Pods-Lores_Example_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example_iOS/Pods-Lores_Example_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C6CBA79BBDFF4DCCFF9C693E /* Pods-Lores_Example_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example_macOS/Pods-Lores_Example_macOS.release.xcconfig"; sourceTree = "<group>"; };
+		D6814133D7ACE7467F424443 /* Pods_Lores_Example_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lores_Example_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7FE1A0474E4098F649F3394 /* Pods-Lores_Example_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example_iOS/Pods-Lores_Example_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		DACFDFC72D56334384CA4DDE /* Pods_Lores_Example_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lores_Example_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC9B7E6352F80DF69129F48C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E1D257339FC1AC72B8E359B1 /* Lores.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Lores.podspec; path = ../Lores.podspec; sourceTree = "<group>"; };
-		E8EDAFA815E38B9BE51E7F58 /* Pods-Lores_Example_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lores_Example_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lores_Example_iOS/Pods-Lores_Example_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E87A785C130E453818DBF89 /* Pods_Lores_Example_macOS.framework in Frameworks */,
+				86B05F7E43725A9CDC8AB3D7 /* Pods_Lores_Example_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +172,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E26EB06A5364558931BDAD1 /* Pods_Lores_Example.framework in Frameworks */,
-				D20254515DD01342C6C99319 /* Pods_Lores_Example_iOS.framework in Frameworks */,
+				7DA8205058801BF3B94FD879 /* Pods_Lores_Example_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79119C6D207852E8009098FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4857C16007A701B52AEF57 /* Pods_Lores_Example_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +220,7 @@
 				031B64CC2074769500D3A0EA /* Mushroom.swift */,
 				031B64CD2074769500D3A0EA /* EmptyProgram.swift */,
 				031B64CE2074769500D3A0EA /* DotsAndLines.swift */,
+				79119C9420794A89009098FD /* Snake.swift */,
 			);
 			path = Programs;
 			sourceTree = "<group>";
@@ -216,21 +256,6 @@
 			path = Lores_Example_macOS;
 			sourceTree = "<group>";
 		};
-		24F1DB08527B555095835238 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1F6CF84F3DFBCBE798A9E005 /* Pods-Lores_Example.debug.xcconfig */,
-				AD30E5964A948C6AF65E50E4 /* Pods-Lores_Example.release.xcconfig */,
-				320D7AD53E73B249C130CD38 /* Pods-Lores_Tests.debug.xcconfig */,
-				0BB6803F0D4F83A7388EF056 /* Pods-Lores_Tests.release.xcconfig */,
-				E8EDAFA815E38B9BE51E7F58 /* Pods-Lores_Example_iOS.debug.xcconfig */,
-				226A7BB41539BDCBC35A012F /* Pods-Lores_Example_iOS.release.xcconfig */,
-				65A9E91FF8847C8878400AEA /* Pods-Lores_Example_macOS.debug.xcconfig */,
-				D7B960E82E747CB1921A3F17 /* Pods-Lores_Example_macOS.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -238,9 +263,10 @@
 				031B64AE2074769400D3A0EA /* Lores-Shared */,
 				607FACD21AFB9204008FA782 /* Lores-iOS */,
 				03B9E14720747F7500814E29 /* Lores_Example_macOS */,
+				79119C71207852E8009098FD /* Lores_Example_tvOS */,
 				607FACD11AFB9204008FA782 /* Products */,
-				24F1DB08527B555095835238 /* Pods */,
-				C23ACA895566B974D6E5E7FA /* Frameworks */,
+				C1BBD038FC2C445E7672E720 /* Pods */,
+				AD94500D31A6542EE837D60B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -249,6 +275,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* Lores_Example_iOS.app */,
 				03B9E14620747F7500814E29 /* Lores_Example_macOS.app */,
+				79119C70207852E8009098FD /* Lores_Example_tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -284,15 +311,39 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		C23ACA895566B974D6E5E7FA /* Frameworks */ = {
+		79119C71207852E8009098FD /* Lores_Example_tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				AA9C0B78A5AAD424A97DB5E8 /* Pods_Lores_Example.framework */,
-				41D3AC8E5E149E7BB86C32BD /* Pods_Lores_Tests.framework */,
-				826F5C28004F02A9735E1843 /* Pods_Lores_Example_iOS.framework */,
-				3A0F0785ADB9DDEC1124B829 /* Pods_Lores_Example_macOS.framework */,
+				79119C72207852E8009098FD /* AppDelegate.swift */,
+				79119C74207852E8009098FD /* ViewController.swift */,
+				79119C76207852E8009098FD /* Main.storyboard */,
+				79119C79207852EA009098FD /* Assets.xcassets */,
+				79119C7B207852EA009098FD /* Info.plist */,
+			);
+			path = Lores_Example_tvOS;
+			sourceTree = "<group>";
+		};
+		AD94500D31A6542EE837D60B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6814133D7ACE7467F424443 /* Pods_Lores_Example_iOS.framework */,
+				DACFDFC72D56334384CA4DDE /* Pods_Lores_Example_macOS.framework */,
+				7185D45DBD155524BA9645CD /* Pods_Lores_Example_tvOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1BBD038FC2C445E7672E720 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4BD0526FF2F83115F10FBC4 /* Pods-Lores_Example_iOS.debug.xcconfig */,
+				D7FE1A0474E4098F649F3394 /* Pods-Lores_Example_iOS.release.xcconfig */,
+				747AAADB331710BD15F39CCE /* Pods-Lores_Example_macOS.debug.xcconfig */,
+				C6CBA79BBDFF4DCCFF9C693E /* Pods-Lores_Example_macOS.release.xcconfig */,
+				63F03C4FB44CDCA15B8F2BF1 /* Pods-Lores_Example_tvOS.debug.xcconfig */,
+				488312164FB9DDD5BA9CA7C7 /* Pods-Lores_Example_tvOS.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,12 +353,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03B9E15520747F7600814E29 /* Build configuration list for PBXNativeTarget "Lores_Example_macOS" */;
 			buildPhases = (
-				FB1A047849EB630AAC7012D2 /* [CP] Check Pods Manifest.lock */,
+				26A3105D84BB459228941194 /* [CP] Check Pods Manifest.lock */,
 				03B9E14220747F7500814E29 /* Sources */,
 				03B9E14320747F7500814E29 /* Frameworks */,
 				03B9E14420747F7500814E29 /* Resources */,
-				D45F1CA659806054FBD64882 /* [CP] Embed Pods Frameworks */,
-				5AC67B2A3A12052A6F1612C3 /* [CP] Copy Pods Resources */,
+				F1043C61C7EC6BFB3324A63A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -322,12 +372,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Lores_Example_iOS" */;
 			buildPhases = (
-				E25D9E5A8A04F0BD593F9DCF /* [CP] Check Pods Manifest.lock */,
+				E1368BBC6128C4CB428B4090 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				1EF12E0E747BF03C3E6D24BB /* [CP] Embed Pods Frameworks */,
-				F1EB263592A25DB1FE5837D2 /* [CP] Copy Pods Resources */,
+				75EEB8B0703D119A3C7F3322 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -336,6 +385,25 @@
 			name = Lores_Example_iOS;
 			productName = Lores;
 			productReference = 607FACD01AFB9204008FA782 /* Lores_Example_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79119C6F207852E8009098FD /* Lores_Example_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79119C7E207852EA009098FD /* Build configuration list for PBXNativeTarget "Lores_Example_tvOS" */;
+			buildPhases = (
+				FDE824395D4E41312CE0A6AA /* [CP] Check Pods Manifest.lock */,
+				79119C6C207852E8009098FD /* Sources */,
+				79119C6D207852E8009098FD /* Frameworks */,
+				79119C6E207852E8009098FD /* Resources */,
+				E7BF0B6AEACE9EFB67E3D1A5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lores_Example_tvOS;
+			productName = Lores_Example_tvOS;
+			productReference = 79119C70207852E8009098FD /* Lores_Example_tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -351,10 +419,20 @@
 					03B9E14520747F7500814E29 = {
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
+					};
+					79119C6F207852E8009098FD = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = 92TUA8H52D;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -373,6 +451,7 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* Lores_Example_iOS */,
 				03B9E14520747F7500814E29 /* Lores_Example_macOS */,
+				79119C6F207852E8009098FD /* Lores_Example_tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -399,10 +478,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79119C6E207852E8009098FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79119C9320786469009098FD /* Images.xcassets in Resources */,
+				79119C7A207852EA009098FD /* Assets.xcassets in Resources */,
+				79119C78207852E8009098FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1EF12E0E747BF03C3E6D24BB /* [CP] Embed Pods Frameworks */ = {
+		26A3105D84BB459228941194 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lores_Example_macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75EEB8B0703D119A3C7F3322 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -424,22 +531,47 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lores_Example_iOS/Pods-Lores_Example_iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5AC67B2A3A12052A6F1612C3 /* [CP] Copy Pods Resources */ = {
+		E1368BBC6128C4CB428B4090 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lores_Example_iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lores_Example_macOS/Pods-Lores_Example_macOS-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D45F1CA659806054FBD64882 /* [CP] Embed Pods Frameworks */ = {
+		E7BF0B6AEACE9EFB67E3D1A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Lores_Example_tvOS/Pods-Lores_Example_tvOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CommonCryptoModule-tvOS/CommonCryptoModule.framework",
+				"${BUILT_PRODUCTS_DIR}/Lores-tvOS/Lores.framework",
+				"${BUILT_PRODUCTS_DIR}/WolfCore-tvOS/WolfCore.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CommonCryptoModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lores.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WolfCore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lores_Example_tvOS/Pods-Lores_Example_tvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1043C61C7EC6BFB3324A63A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -461,7 +593,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lores_Example_macOS/Pods-Lores_Example_macOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E25D9E5A8A04F0BD593F9DCF /* [CP] Check Pods Manifest.lock */ = {
+		FDE824395D4E41312CE0A6AA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -472,40 +604,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Lores_Example_iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F1EB263592A25DB1FE5837D2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lores_Example_iOS/Pods-Lores_Example_iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FB1A047849EB630AAC7012D2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Lores_Example_macOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Lores_Example_tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -531,6 +630,7 @@
 				030ADD5E207491DE00AA6FF0 /* TheDrip.swift in Sources */,
 				030ADD6A207491DE00AA6FF0 /* Mushroom.swift in Sources */,
 				030ADD67207491DE00AA6FF0 /* Sparkler.swift in Sources */,
+				79119C9620794A89009098FD /* Snake.swift in Sources */,
 				030ADD62207491DE00AA6FF0 /* Rectangles.swift in Sources */,
 				030ADD6B207491DE00AA6FF0 /* EmptyProgram.swift in Sources */,
 				030ADD5C207491DE00AA6FF0 /* SwiftLesson1Page3.swift in Sources */,
@@ -560,6 +660,7 @@
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				031B64E92074769500D3A0EA /* Sparkler.swift in Sources */,
 				031B64E62074769500D3A0EA /* SwiftLesson.swift in Sources */,
+				79119C9520794A89009098FD /* Snake.swift in Sources */,
 				031B64EE2074769500D3A0EA /* DotsAndLines.swift in Sources */,
 				031B64D32074769500D3A0EA /* SwiftLesson1Page3.swift in Sources */,
 				031B64D52074769500D3A0EA /* TheDrip.swift in Sources */,
@@ -570,6 +671,36 @@
 				031B64D72074769500D3A0EA /* SwiftLesson1Page2.swift in Sources */,
 				031B64F02074769500D3A0EA /* ProgramSelector.swift in Sources */,
 				031B64D62074769500D3A0EA /* Gravel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79119C6C207852E8009098FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79119C89207863E5009098FD /* Rectangles.swift in Sources */,
+				79119C82207863E5009098FD /* SwiftLesson1Page1.swift in Sources */,
+				79119C87207863E5009098FD /* SwiftLesson1Page2.swift in Sources */,
+				79119C90207863E5009098FD /* Mushroom.swift in Sources */,
+				79119C8A207863E5009098FD /* RainingHearts.swift in Sources */,
+				79119C8B207863E5009098FD /* SwiftLesson.swift in Sources */,
+				79119C83207863E5009098FD /* SwiftLesson1Page3.swift in Sources */,
+				79119C75207852E8009098FD /* ViewController.swift in Sources */,
+				79119C7F207863DC009098FD /* ProgramSelector.swift in Sources */,
+				79119C81207863E5009098FD /* HelloPixel.swift in Sources */,
+				79119C8C207863E5009098FD /* SargonChessboard.swift in Sources */,
+				79119C84207863E5009098FD /* Pebbles.swift in Sources */,
+				79119C9720794A89009098FD /* Snake.swift in Sources */,
+				79119C86207863E5009098FD /* Gravel.swift in Sources */,
+				79119C91207863E5009098FD /* EmptyProgram.swift in Sources */,
+				79119C80207863E5009098FD /* Mandala.swift in Sources */,
+				79119C92207863E5009098FD /* DotsAndLines.swift in Sources */,
+				79119C85207863E5009098FD /* TheDrip.swift in Sources */,
+				79119C88207863E5009098FD /* Whirlwind.swift in Sources */,
+				79119C73207852E8009098FD /* AppDelegate.swift in Sources */,
+				79119C8F207863E5009098FD /* Move.swift in Sources */,
+				79119C8D207863E5009098FD /* Ball.swift in Sources */,
+				79119C8E207863E5009098FD /* Sparkler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,12 +731,20 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
+		79119C76207852E8009098FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79119C77207852E8009098FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		03B9E15320747F7600814E29 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65A9E91FF8847C8878400AEA /* Pods-Lores_Example_macOS.debug.xcconfig */;
+			baseConfigurationReference = 747AAADB331710BD15F39CCE /* Pods-Lores_Example_macOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -614,7 +753,6 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = Lores_Example_macOS/Lores_Example_macOS.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -633,7 +771,7 @@
 		};
 		03B9E15420747F7600814E29 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7B960E82E747CB1921A3F17 /* Pods-Lores_Example_macOS.release.xcconfig */;
+			baseConfigurationReference = C6CBA79BBDFF4DCCFF9C693E /* Pods-Lores_Example_macOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -642,7 +780,6 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = Lores_Example_macOS/Lores_Example_macOS.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -762,7 +899,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8EDAFA815E38B9BE51E7F58 /* Pods-Lores_Example_iOS.debug.xcconfig */;
+			baseConfigurationReference = C4BD0526FF2F83115F10FBC4 /* Pods-Lores_Example_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/Lores-iOS/Info.plist";
@@ -779,7 +916,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 226A7BB41539BDCBC35A012F /* Pods-Lores_Example_iOS.release.xcconfig */;
+			baseConfigurationReference = D7FE1A0474E4098F649F3394 /* Pods-Lores_Example_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/Lores-iOS/Info.plist";
@@ -791,6 +928,64 @@
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79119C7C207852EA009098FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63F03C4FB44CDCA15B8F2BF1 /* Pods-Lores_Example_tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Lores_Example_tvOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arciem.Lores-Example-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.3;
+			};
+			name = Debug;
+		};
+		79119C7D207852EA009098FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 488312164FB9DDD5BA9CA7C7 /* Pods-Lores_Example_tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Lores_Example_tvOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arciem.Lores-Example-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.3;
 			};
 			name = Release;
 		};
@@ -820,6 +1015,15 @@
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79119C7E207852EA009098FD /* Build configuration list for PBXNativeTarget "Lores_Example_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79119C7C207852EA009098FD /* Debug */,
+				79119C7D207852EA009098FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

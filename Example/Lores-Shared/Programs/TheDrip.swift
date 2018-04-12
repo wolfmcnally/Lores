@@ -3,7 +3,7 @@ import typealias WolfCore.Frac
 
 class DripProgram: Program {
     private let percentObstacles: Frac = 0.3
-    private let framesPerDrip = 20
+    private let framesPerDrip = 40
     private let basinColor = Color.white.darkened(by: 0.2)
     private let obstacleColor = Color.orange.darkened(by: 0.6)
     private let movingDripColor = Color.blue.lightened(by: 0.4)
@@ -30,11 +30,11 @@ class DripProgram: Program {
     private var drips = [Drip]()
 
     override func setup() {
-        //canvasSize = Size(width: 200, height: 200)
+        canvasSize = Size(width: 170, height: 100)
         //canvasSize = Size(width: 20, height: 100)
         backgroundCanvas.clearColor = nil
         backgroundCanvas.clearToColor(.clear)
-        framesPerSecond = 30
+        framesPerSecond = 60
 
         drawBasin()
         drawObstacles()

@@ -10,13 +10,13 @@ class WhirlwindProgram: Program {
         var color: Color = .white
     }
 
-    private let particlesCount = 2000
+    private let particlesCount = 4000
     private var particles = [Particle]()
     private var center = DPoint.zero
 
     override func setup() {
-        framesPerSecond = 30
-        canvasSize = Size(width: 100, height: 150)
+        framesPerSecond = 60
+        canvasSize = Size(width: 350, height: 200)
         backgroundCanvas.clearColor = .clear
         center = canvas.bounds.mid.dpoint
         for _ in 0 ..< particlesCount {
@@ -45,15 +45,14 @@ class WhirlwindProgram: Program {
 
         p.center = canvas.bounds.mid.dpoint
 
-        let minRadius = Double(canvas.bounds.maxX) / 15
-        let r = Double(canvas.bounds.midY)
-        let maxRadius = sqrt(r * r  +  r * r)
+        let minRadius = Double(canvas.bounds.maxX) / 20
+        let maxRadius = Double(canvas.bounds.maxX) / 1.5
         p.radius = Random.number(minRadius .. maxRadius)
 
         p.angle = Random.number(0 .. (2 * .pi))
 
-        let minSteps = 400.0
-        let maxSteps = 600.0
+        let minSteps = 800.0
+        let maxSteps = 1200.0
         p.angularSpeed = .pi * 2 / Random.number(minSteps .. maxSteps)
 
         let minSpeed = 1.0

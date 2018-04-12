@@ -93,6 +93,18 @@ public class ProgramView: View {
         }
 
         #endif
+
+        #if os(tvOS)
+        canvasView.swiped = { direction in
+            self.program.swiped(in: direction)
+        }
+        canvasView.directionButtonPressed = { direction in
+            self.program.directionButtonPressed(in: direction)
+        }
+        canvasView.directionButtonReleased = { direction in
+            self.program.directionButtonReleased(in: direction)
+        }
+        #endif
     }
 
     public func flush() {

@@ -30,6 +30,10 @@ extension Offset: Equatable {
     }
 }
 
+public prefix func - (rhs: Offset) -> Offset {
+    return Offset(dx: -rhs.dx, dy: -rhs.dy)
+}
+
 public func + (lhs: Offset, rhs: Offset) -> Offset {
     return Offset(dx: lhs.dx + rhs.dx, dy: lhs.dy + rhs.dy)
 }

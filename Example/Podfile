@@ -1,13 +1,19 @@
 use_frameworks!
+use_modular_headers!
+
+pod 'Lores', :path => '../'
+
+pod 'WolfCore', :path => '../../WolfCore/'
+#pod 'WolfCore', '~> 2.2'
 
 target 'Lores_Example_iOS' do
   platform :ios, '11.3'
-  pod 'Lores', :path => '../'
-  pod 'WolfCore', :path => '../../WolfCore/'
 end
 
 target 'Lores_Example_macOS' do
     platform :macos, '10.13'
-    pod 'Lores', :path => '../'
-    pod 'WolfCore', :path => '../../WolfCore/'
+end
+
+target 'Lores_Example_tvOS' do
+    platform :tvos, '11.3'
 end

@@ -81,13 +81,17 @@ open class Program {
     }
 
     private var displayLink: DisplayLink?
+    private var displayLinkFrameCounter = 0
 
     public var framesPerSecond: Int = 0 {
         didSet {
             displayLink?.invalidate()
+            displayLinkFrameCounter = 0
             guard framesPerSecond > 0 else { return }
             displayLink = DisplayLink(preferredFramesPerSecond: framesPerSecond) { [unowned self] _ in
                 dispatchOnMain {
+                    defer { self.displayLinkFrameCounter += 1}
+                    guard self.displayLinkFrameCounter > 1 else { return }
                     self._update()
                     self.displayIfNeeded()
                 }
@@ -158,9 +162,17 @@ open class Program {
     open func mouseMoved(at point: Point) { }
     open func mouseExited(at point: Point) { }
 
+    open func keyDown(with key: Key) { }
+    open func keyUp(with key: Key) { }
+
     // iOS
     open func touchBegan(at point: Point) { }
     open func touchMoved(at point: Point) { }
     open func touchEnded(at point: Point) { }
     open func touchCancelled(at point: Point) { }
+
+    // tvOS
+    open func directionButtonPressed(in direction: Direction) { }
+    open func directionButtonReleased(in direction: Direction) { }
+    open func swiped(in direction: Direction) { }
 }

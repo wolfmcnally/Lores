@@ -16,6 +16,11 @@ class AppViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        NSEvent.addLocalMonitorForEvents(matching: .keyDown) { [unowned self] in
+            self.keyDown(with: $0)
+            return nil
+        }
+
         view => [
             programView
         ]
@@ -46,5 +51,15 @@ class AppViewController: NSViewController {
     override func viewWillAppear() {
         super.viewWillAppear()
         programView.program.display()
+    }
+
+    public override func keyDown(with event: NSEvent) {
+        guard let key = Key(event: event) else { return }
+        program.keyDown(with: key)
+    }
+
+    public override func keyUp(with event: NSEvent) {
+        guard let key = Key(event: event) else { return }
+        program.keyUp(with: key)
     }
 }

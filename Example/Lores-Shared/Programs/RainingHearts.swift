@@ -8,7 +8,7 @@ class RainingHeartsProgram: Program {
     var hearts = [MySprite]()
 
     override func setup() {
-        canvasSize = Size(width: 200, height: 200)
+        canvasSize = Size(width: 340, height: 200)
         framesPerSecond = 30
 
         for _ in 0 ..< heartsCount {
